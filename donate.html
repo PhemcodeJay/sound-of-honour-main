@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Sound Of Honour Global Services</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="upload/images/logo.jpeg" alt="Sound of Honour Logo" class="logo-img">
+                <div class="logo-text">Sound of Honour <span>Global Services</span></div>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="nav-link"><i class="fas fa-church"></i> About</a>
+                <a href="ministry.html" class="nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
+                <a href="services.html" class="nav-link"><i class="fas fa-guitar"></i> Services</a>
+                <a href="events.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
+                <a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+                <a href="donate.html" class="nav-link active"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html" class="mobile-nav-link"><i class="fas fa-church"></i> About</a>
+            <a href="ministry.html" class="mobile-nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
+            <a href="services.html" class="mobile-nav-link"><i class="fas fa-guitar"></i> Services</a>
+            <a href="events.html" class="mobile-nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
+            <a href="gallery.html" class="mobile-nav-link"><i class="fas fa-images"></i> Gallery</a>
+            <a href="donate.html" class="mobile-nav-link active"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main style="padding-top: 100px;">
+        <section class="donation-section" id="donate">
+            <div class="container" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+                <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Support Our Ministry</h2>
+                <p style="text-align: center; max-width: 900px; margin: 0 auto 60px; color: #666; font-size: 1.2rem; line-height: 1.7;">
+                    Your generous giving fuels our worship services, evangelism crusades, prayer ministry, community feeding programs, youth empowerment, and music training. Thank you for partnering with us to transform lives through the Gospel!
+                </p>
+
+                <!-- 6 Donation Cards with Slideshow Images -->
+                <div class="donate-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px;">
+                    <!-- Card 1: General Offering (Worship Services) -->
+                    <div class="donate-card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://media.istockphoto.com/id/598155414/photo/worshippers-raise-their-hands-at-a-christian-church-service.jpg?s=612x612&w=0&k=20&c=aN2E21SSzI2_M_OOw4Mjb9R7cnTkKYl8H9kXcEWUMRg=" alt="Worship Service" class="card-img"></div>
+                            <div class="slide fade"><img src="https://www.9marks.org/wp-content/uploads/2023/02/9marks.org-6.png" alt="Congregation Praise" class="card-img"></div>
+                            <div class="slide fade"><img src="https://www.learnreligions.com/thmb/juyH-KY5YAJPB4jlK-LzW8j6iCU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Praise-and-Worship-58b5c8ba5f9b586046caf1fa.jpg" alt="Praise Team" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="donate-card-content">
+                            <i class="fas fa-church donate-icon"></i>
+                            <h3>General Offering</h3>
+                            <p>Support weekly worship services, ministry operations, and facilities.</p>
+                            <button class="donate-btn" onclick="donateViaPayPal('offering')">Donate via PayPal</button>
+                            <button class="donate-btn" onclick="donateViaMPesa('General Offering')">Donate via M-Pesa</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Mission & Evangelism -->
+                    <div class="donate-card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://gocic.org/wp-content/uploads/2019/12/sr_437818-1.jpg" alt="Crusade Outreach" class="card-img"></div>
+                            <div class="slide fade"><img src="https://domcrusades.org/wp-content/uploads/2025/07/9.jpeg" alt="Mission Field" class="card-img"></div>
+                            <div class="slide fade"><img src="https://redeeminggod.com/wp-content/uploads/2011/12/Crusade-Evangelism.jpg" alt="Evangelism Event" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="donate-card-content">
+                            <i class="fas fa-cross donate-icon"></i>
+                            <h3>Mission & Evangelism</h3>
+                            <p>Fund crusades, street outreach, and church planting in unreached areas.</p>
+                            <button class="donate-btn" onclick="donateViaPayPal('missions')">Donate via PayPal</button>
+                            <button class="donate-btn" onclick="contactWhatsApp('Mission Projects')">Inquire via WhatsApp</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Community Feeding & Support -->
+                    <div class="donate-card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://heartforafrica.org/wp-content/uploads/2024/05/HeartforAfrica-2023-SDH-8265-1.jpg" alt="Feeding Program" class="card-img"></div>
+                            <div class="slide fade"><img src="https://wvusstatic.com/www/uploads/2017/05/Hunger-in-Africa-Lead.jpg" alt="Helping Families" class="card-img"></div>
+                            <div class="slide fade"><img src="https://spweb-uploads.s3.theark.cloud/2024/04/South-Sudan-Report-Image-4.jpg" alt="Orphan Support" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="donate-card-content">
+                            <i class="fas fa-heart donate-icon"></i>
+                            <h3>Community Feeding & Support</h3>
+                            <p>Provide food, education, and assistance for orphans and vulnerable families.</p>
+                            <button class="donate-btn" onclick="donateViaPayPal('community')">Donate via PayPal</button>
+                            <button class="donate-btn" onclick="donateViaMPesa('Community Support')">Donate via M-Pesa</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Prayer Ministry -->
+                    <div class="donate-card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://samaritanministries.org/uploads/img/blog-featured-image-diverse-group-prayer-holding-hands.jpg" alt="Prayer Group" class="card-img"></div>
+                            <div class="slide fade"><img src="https://images.squarespace-cdn.com/content/v1/5bf4340770e8026f5a08fd46/1594507315927-3UYJWP5L75PCK4UNAX42/Healing+our+nation+racial+reconciliation+Christians.jpg" alt="Intercession" class="card-img"></div>
+                            <div class="slide fade"><img src="http://churchtimesnigeria.net/wp-content/uploads/2022/05/prayeraaa.jpg" alt="Prayer Meeting" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="donate-card-content">
+                            <i class="fas fa-pray donate-icon"></i>
+                            <h3>Prayer Ministry Support</h3>
+                            <p>Help sustain our intercessory prayer teams and all-night vigils.</p>
+                            <button class="donate-btn" onclick="donateViaPayPal('prayer')">Donate via PayPal</button>
+                            <button class="donate-btn" onclick="donateViaMPesa('Prayer Ministry')">Donate via M-Pesa</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 5: Music Training & Production -->
+                    <div class="donate-card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://solidstatelogic.com/assets/components/phpthumbof/cache/20210919_BlueAmberPhoto_thestudiosetup_1002.90e9d27c0adb16071da12a892e13d388.jpg" alt="Gospel Studio" class="card-img"></div>
+                            <div class="slide fade"><img src="https://www.grace.edu/wp-content/uploads/2019/03/Worship-Arts-Studio-1920x1280.jpg" alt="Music Production" class="card-img"></div>
+                            <div class="slide fade"><img src="https://www.cras.edu/wp-content/uploads/2024/09/2024-CRAS-Class.jpg" alt="Training Class" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="donate-card-content">
+                            <i class="fas fa-guitar donate-icon"></i>
+                            <h3>Music Training & Production</h3>
+                            <p>Equip worship leaders through classes, instruments, and studio recording.</p>
+                            <button class="donate-btn" onclick="donateViaPayPal('music')">Donate via PayPal</button>
+                            <button class="donate-btn" onclick="contactWhatsApp('Music Training')">Inquire via WhatsApp</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 6: Youth Empowerment -->
+                    <div class="donate-card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://www.learnreligions.com/thmb/arguEimEj1vq8vslcH-CGCMWJMs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bible-study-girls-641213340-157034b06e204dcf9d5328679d7cb3a4.jpg" alt="Youth Bible Study" class="card-img"></div>
+                            <div class="slide fade"><img src="https://youthministry360.com/cdn/shop/articles/IMG_9157_1800x1200_crop_center.png?v=1507695353" alt="Youth Group" class="card-img"></div>
+                            <div class="slide fade"><img src="https://www.mt-ararat.org/images/1_16.jpg" alt="Teen Empowerment" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="donate-card-content">
+                            <i class="fas fa-users donate-icon"></i>
+                            <h3>Youth Empowerment</h3>
+                            <p>Invest in the next generation through discipleship and leadership training.</p>
+                            <button class="donate-btn" onclick="donateViaPayPal('youth')">Donate via PayPal</button>
+                            <button class="donate-btn" onclick="donateViaMPesa('Youth Ministry')">Donate via M-Pesa</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prayer Request Form -->
+                <div class="form-container" style="margin-top: 100px;">
+                    <div class="form-card">
+                        <h3 style="text-align: center; color: #00695c;">Submit Your Prayer Request</h3>
+                        <p style="text-align: center; margin-bottom: 30px; color: #666;">We are committed to praying with you. Share your request anonymously or with details.</p>
+                        <form id="prayerFormElement">
+                            <div class="form-group">
+                                <input type="text" id="prayerName" placeholder="Your Name (optional or Anonymous)">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="prayerEmail" placeholder="Email (optional)">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="prayerPhone" placeholder="Phone (optional)">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="prayerMessage" placeholder="Your prayer request..." required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sound of Honour Global Services</h4>
+                <p>Spreading the Gospel through worship, prayer, and compassionate action since 2019.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Kamiti Rd, Kahawa West, Nairobi, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 711509194</p>
+                <p><i class="fas fa-envelope"></i> gbrlrotimi@gmail.com</p>
+                
+                <div class="social-links">
+                    <a href="https://facebook.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="ministry.html" style="color: white; text-decoration: none;">Ministry Areas</a></p>
+                <p><a href="gallery.html" style="color: white; text-decoration: none;">Gallery</a></p>
+                <p><a href="events.html" style="color: white; text-decoration: none;">Events</a></p>
+                <p><a href="donate.html" style="color: white; text-decoration: none;">Donate</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Sound Of Honour Global Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===== WHATSAPP & BACK TO TOP ===== -->
+    <a href="https://wa.me/254711509194" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#siteHeader" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // Mobile menu & scroll effects
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+        const siteHeader = document.getElementById('siteHeader');
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            siteHeader.classList.toggle('scrolled', window.scrollY > 100);
+            backToTop.classList.toggle('visible', window.scrollY > 500);
+        });
+        
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileNav.classList.toggle('active');
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+        
+        navLinks.forEach(link => link.addEventListener('click', function() {
+            if (window.innerWidth <= 768) mobileNav.classList.remove('active');
+            navLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        }));
+        
+        document.addEventListener('click', function(e) {
+            if (!mobileNav.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                mobileNav.classList.remove('active');
+            }
+        });
+
+        // Donation placeholders (replace with real PayPal button IDs)
+        function donateViaPayPal(type) {
+            const urls = {
+                offering: 'https://www.paypal.com/donate/?hosted_button_id=OFFERING_ID',
+                missions: 'https://www.paypal.com/donate/?hosted_button_id=MISSIONS_ID',
+                community: 'https://www.paypal.com/donate/?hosted_button_id=COMMUNITY_ID',
+                prayer: 'https://www.paypal.com/donate/?hosted_button_id=PRAYER_ID',
+                music: 'https://www.paypal.com/donate/?hosted_button_id=MUSIC_ID',
+                youth: 'https://www.paypal.com/donate/?hosted_button_id=YOUTH_ID'
+            };
+            window.open(urls[type] || 'https://www.paypal.com', '_blank');
+        }
+
+        function donateViaMPesa(purpose) {
+            const text = encodeURIComponent(`I want to donate for ${purpose} via M-Pesa. Please provide details.`);
+            window.open(`https://wa.me/254711509194?text=${text}`, '_blank');
+        }
+
+        function contactWhatsApp(purpose) {
+            const text = encodeURIComponent(`Hello, interested in supporting ${purpose}. More details please.`);
+            window.open(`https://wa.me/254711509194?text=${text}`, '_blank');
+        }
+
+        // Prayer Form
+        document.getElementById('prayerFormElement').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('prayerName').value.trim() || 'Anonymous';
+            const email = document.getElementById('prayerEmail').value.trim();
+            const phone = document.getElementById('prayerPhone').value.trim();
+            const message = document.getElementById('prayerMessage').value.trim();
+            let text = `*Prayer Request*%0A%0A*Name:* ${name}%0A`;
+            if (email) text += `*Email:* ${email}%0A`;
+            if (phone) text += `*Phone:* ${phone}%0A`;
+            text += `%0A*Message:*%0A${message}%0A%0A_We are praying with you!_ ✝️`;
+            window.open(`https://wa.me/254711509194?text=${text}`, '_blank');
+            alert('Prayer request sent via WhatsApp. Thank you!');
+            this.reset();
+        });
+
+        // Slideshow in each donate card
+        let slideIndices = {};
+        function plusSlides(n, btn) {
+            const slideshow = btn.parentElement;
+            let slides = slideshow.querySelectorAll('.slide');
+            if (!slideIndices[slideshow]) slideIndices[slideshow] = 1;
+            showSlide(slides, slideIndices[slideshow] += n);
+        }
+        function showSlide(slides, n) {
+            if (n > slides.length) n = 1;
+            if (n < 1) n = slides.length;
+            slides.forEach(s => s.style.display = "none");
+            slides[n-1].style.display = "block";
+        }
+        document.querySelectorAll('.slideshow-container').forEach(container => {
+            const slides = container.querySelectorAll('.slide');
+            if (slides.length > 0) showSlide(slides, 1);
+        });
+    </script>
+
+    <!-- Slideshow Styles -->
+    <style>
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 15px 15px 0 0;
+        }
+        .slideshow-container .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        .slideshow-container .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .slideshow-container .prev, .slideshow-container .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(0,0,0,0.5);
+            color: white;
+            font-size: 1.8rem;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: 0.3s;
+        }
+        .slideshow-container .prev { left: 15px; }
+        .slideshow-container .next { right: 15px; }
+        .slideshow-container .prev:hover, .slideshow-container .next:hover {
+            background: rgba(0,105,92,0.9);
+        }
+        .donate-card-content {
+            padding: 30px;
+            text-align: center;
+        }
+        .donate-icon {
+            font-size: 3.5rem;
+            color: #00695c;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            .slideshow-container { height: 250px; }
+            .donate-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</body>
+</html>

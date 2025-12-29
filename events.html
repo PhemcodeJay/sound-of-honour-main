@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Sound Of Honour Global Services</title>
+    
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="upload/images/logo.jpeg" alt="Sound of Honour Logo" class="logo-img">
+                <div class="logo-text">Sound of Honour <span>Global Services</span></div>
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <nav class="desktop-nav">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="nav-link"><i class="fas fa-church"></i> About</a>
+                <a href="ministry.html" class="nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
+                <a href="services.html" class="nav-link"><i class="fas fa-guitar"></i> Services</a>
+                <a href="events.html" class="nav-link active"><i class="fas fa-calendar-alt"></i> Events</a>
+                <a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+                <a href="donate.html" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+            </nav>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html" class="mobile-nav-link"><i class="fas fa-church"></i> About</a>
+            <a href="ministry.html" class="mobile-nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
+            <a href="services.html" class="mobile-nav-link"><i class="fas fa-guitar"></i> Services</a>
+            <a href="events.html" class="mobile-nav-link active"><i class="fas fa-calendar-alt"></i> Events</a>
+            <a href="gallery.html" class="mobile-nav-link"><i class="fas fa-images"></i> Gallery</a>
+            <a href="donate.html" class="mobile-nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+        </nav>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main style="padding-top: 100px;">
+        <section class="section" id="events">
+            <div class="container" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+                <h2 class="section-title" style="text-align: center; margin-bottom: 40px;">Upcoming & Recurring Events</h2>
+                
+                <!-- Full Interactive Calendar -->
+                <div id="calendar" style="background: white; padding: 20px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 60px;"></div>
+                
+                <!-- List of Recurring Events with Slideshow -->
+                <h3 style="text-align: center; margin-bottom: 30px; color: #00695c;">Our Regular Schedule</h3>
+                <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <!-- Sunday Worship Service -->
+                    <div class="card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://www.9marks.org/wp-content/uploads/2023/02/9marks.org-6.png" alt="Congregation Worship" class="card-img"></div>
+                            <div class="slide fade"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Grace_Community_Church_Worship.jpg" alt="Church Singing" class="card-img"></div>
+                            <div class="slide fade"><img src="https://www.learnreligions.com/thmb/juyH-KY5YAJPB4jlK-LzW8j6iCU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Praise-and-Worship-58b5c8ba5f9b586046caf1fa.jpg" alt="Praise and Worship" class="card-img"></div>
+                            <div class="slide fade"><img src="https://www.shutterstock.com/shutterstock/videos/3716382523/thumb/1.jpg?ip=x480" alt="Women Singing Prayer" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Sunday Worship Service</h3>
+                            <p class="card-text">Powerful worship, teaching, and fellowship every week.</p>
+                            <div class="card-footer">
+                                <span class="card-date">Every Sunday at 12:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bible Study -->
+                    <div class="card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://media.swncdn.com/cms/CW/faith/47910-church-fellowship-1200.1200w.tn.jpg" alt="Bible Study Group" class="card-img"></div>
+                            <div class="slide fade"><img src="http://ascensionpress.com/cdn/shop/articles/bible-study1_83bb0366-8f83-40fe-b6bb-388c45bb1eee.jpg?v=1734725302" alt="Small Group Study" class="card-img"></div>
+                            <div class="slide fade"><img src="https://www.clearview.org/wp-content/uploads/2023/05/bible-study.jpeg" alt="Group Discussion" class="card-img"></div>
+                            <div class="slide fade"><img src="https://livingbydesign.org/wp-content/uploads/2023/12/A-Christian-Woman_s-Guide-to-Leading-a-Community-Bible-Study-5.jpg" alt="Leading Bible Study" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Bible Study</h3>
+                            <p class="card-text">Deep dive into God's Word.</p>
+                            <div class="card-footer">
+                                <span class="card-date">Every Tuesday at 6:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Midweek Prayer Meeting -->
+                    <div class="card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://media.swncdn.com/cms/CW/faith/39753-women-praying-1200.1200w.tn.jpg" alt="Women Praying" class="card-img"></div>
+                            <div class="slide fade"><img src="https://res.cloudinary.com/tearfund/image/fetch/c_scale,w_1274/f_auto/https://www.tearfund.org/-/media/tearfund/images/get-involved/pray/prayer-resources/prayer-guides/a-short-guide-to-intercessory-prayer/intercessory-prayer-image-3.jpg" alt="Intercessory Prayer" class="card-img"></div>
+                            <div class="slide fade"><img src="https://www.shutterstock.com/image-photo/christian-prayer-group-people-holding-260nw-2495427855.jpg" alt="Prayer Group" class="card-img"></div>
+                            <div class="slide fade"><img src="https://www.vancopayments.com/hs-fs/hubfs/chub_backup/Volunteer%20Praying%20at%20Church.jpg?width=1024&height=683&name=Volunteer%20Praying%20at%20Church.jpg" alt="Church Prayer" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Midweek Prayer Meeting</h3>
+                            <p class="card-text">Intercessory prayer and warfare.</p>
+                            <div class="card-footer">
+                                <span class="card-date">Every Wednesday at 7:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Community Feeding Program -->
+                    <div class="card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="http://www.miamiarch.org/atimo_s/articles_images/2016/09/2016_0826_misioneras_de_la_caridad_miami_016SM_1472748188.jpg" alt="Serving the Poor" class="card-img"></div>
+                            <div class="slide fade"><img src="https://crosscatholic.org/wp-content/uploads/2022/04/CCO-PillarPg-Food-02-FeaturedStory02-RainbowNetworkNicaragua.jpg" alt="Feeding Children" class="card-img"></div>
+                            <div class="slide fade"><img src="https://foodforthepoor.org/wp-content/uploads/x706-donors.jpg" alt="Charity Donors" class="card-img"></div>
+                            <div class="slide fade"><img src="http://www.ccdocle.org/files/locations/header/st.augustinehungercenterheader.png" alt="Hunger Center" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Community Feeding Program</h3>
+                            <p class="card-text">Providing meals to those in need.</p>
+                            <div class="card-footer">
+                                <span class="card-date">Every Thursday</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Youth Ministry -->
+                    <div class="card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://www.focusonthefamily.com/wp-content/uploads/2017/05/jesus-loves-austin-vA95WJnVNWk-unsplash-1024x683.jpg" alt="Youth Worship" class="card-img"></div>
+                            <div class="slide fade"><img src="https://www.9marks.org/wp-content/uploads/2014/08/worship-millennials-youth-young-people-christians-church.jpg" alt="Young People Worship" class="card-img"></div>
+                            <div class="slide fade"><img src="https://rootedministry.com/wp-content/uploads/ismael-paramo-08Roe6Iauok-unsplash.jpg" alt="Youth Group" class="card-img"></div>
+                            <div class="slide fade"><img src="https://cdn.prod.website-files.com/5f6b9a421d5a61e1d0cd9e3d/6025d56721d4b8319e9c360f_60181f2a7490560d4ebda23a_vince-fleming-afrNpD1wKZU-unsplash.jpeg" alt="Youth Involvement" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Youth Ministry</h3>
+                            <p class="card-text">Empowering the next generation.</p>
+                            <div class="card-footer">
+                                <span class="card-date">Every Friday at 5:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Street Evangelism & Outreach -->
+                    <div class="card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://www.ywambudapest.org/uploads/2/6/5/1/26514343/5557035_orig.jpg" alt="Street Outreach" class="card-img"></div>
+                            <div class="slide fade"><img src="https://www.jesusfilm.org/wp-content/uploads/2025/12/blog-18DEC25Street-Evangelism_MP-2.jpg" alt="Gospel Chat" class="card-img"></div>
+                            <div class="slide fade"><img src="https://mukitalemoses.com/wp-content/uploads/2025/01/image-4.jpg?w=1024" alt="Preaching in City" class="card-img"></div>
+                            <div class="slide fade"><img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1291176922420107" alt="Street Evangelism" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Street Evangelism & Outreach</h3>
+                            <p class="card-text">Taking the Gospel to the streets.</p>
+                            <div class="card-footer">
+                                <span class="card-date">Every Saturday at 10:00 AM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Monthly Worship Night & All-Night Prayer -->
+                    <div class="card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://i.ytimg.com/vi/a4-b7RIEKbo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB3K05BUQYjvOYt_utDgvUfVhYH5Q" alt="Prayer Vigil" class="card-img"></div>
+                            <div class="slide fade"><img src="https://holytrinitypublications.com/wp-content/uploads/2025/02/9780884651154.IN01.jpg" alt="All-Night Vigil" class="card-img"></div>
+                            <div class="slide fade"><img src="https://i.ytimg.com/vi/bQpN2jg9phU/maxresdefault.jpg" alt="Whole Night Prayer" class="card-img"></div>
+                            <div class="slide fade"><img src="https://i.ytimg.com/vi/20lQjnfyRHY/sddefault.jpg" alt="Vigil Worship" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Monthly Worship Night & All-Night Prayer</h3>
+                            <p class="card-text">Extended worship and prayer session.</p>
+                            <div class="card-footer">
+                                <span class="card-date">Last Friday of Every Month (7:00 PM - 6:00 AM)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Upcoming Special Events with Slideshow -->
+                <h3 style="text-align: center; margin: 40px 0 30px; color: #00695c;">Special Upcoming Events</h3>
+                <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <!-- New Year Prayer Vigil -->
+                    <div class="card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172885721%2F1816575363103%2F1%2Foriginal.20251213-034235?w=1000&auto=format%2Ccompress&q=75&sharp=10&s=bff57a8dbf5672b8225126329d8b2ff0" alt="Crossover Service" class="card-img"></div>
+                            <div class="slide fade"><img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3789624373129681069" alt="New Year's Eve Prayer" class="card-img"></div>
+                            <div class="slide fade"><img src="https://lookaside.instagram.com/seo/google_widget/crawler/?media_id=3791666719760754232" alt="Night Vigil" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">New Year Prayer Vigil</h3>
+                            <p class="card-text">Cross over into 2026 with prayer and thanksgiving.</p>
+                            <div class="card-footer">
+                                <span class="card-date">January 1, 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Community Feeding Program (Special) -->
+                    <div class="card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="https://crosscatholic.org/wp-content/uploads/2022/04/CCO-PillarPg-Food-02-FeaturedStory02-RainbowNetworkNicaragua.jpg" alt="Special Feeding" class="card-img"></div>
+                            <div class="slide fade"><img src="http://www.miamiarch.org/atimo_s/articles_images/2016/09/2016_0826_misioneras_de_la_caridad_miami_016SM_1472748188.jpg" alt="Extended Outreach" class="card-img"></div>
+                            <div class="slide fade"><img src="https://foodforthepoor.org/wp-content/uploads/x706-donors.jpg" alt="Community Help" class="card-img"></div>
+                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
+                            <a class="next" onclick="plusSlides(1, this)">❯</a>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Community Feeding Program (Special)</h3>
+                            <p class="card-text">Extended outreach and feeding initiative.</p>
+                            <div class="card-footer">
+                                <span class="card-date">January 4, 2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sound of Honour Global Services</h4>
+                <p>Spreading the Gospel through worship, prayer, and compassionate action since 2019.</p>
+                <p>"Through music, prayer, and compassionate action, we aim to uplift lives, strengthen faith, and bring hope to those in need."</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Kamiti Rd, Kahawa West, Nairobi, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 711509194</p>
+                <p><i class="fas fa-envelope"></i> gbrlrotimi@gmail.com</p>
+                
+                <div class="social-links">
+                    <a href="https://facebook.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://twitter.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="ministry.html" style="color: white; text-decoration: none;">Ministry Areas</a></p>
+                <p><a href="gallery.html" style="color: white; text-decoration: none;">Photo Gallery</a></p>
+                <p><a href="events.html" style="color: white; text-decoration: none;">Upcoming Events</a></p>
+                <p><a href="donate.html" style="color: white; text-decoration: none;">Support Our Work</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Sound Of Honour Global Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+    <a href="https://wa.me/254711509194" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#siteHeader" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+
+    <script>
+        // Mobile menu, header scroll, back-to-top
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+        const siteHeader = document.getElementById('siteHeader');
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 100) siteHeader.classList.add('scrolled');
+            else siteHeader.classList.remove('scrolled');
+            
+            if (window.scrollY > 500) backToTop.classList.add('visible');
+            else backToTop.classList.remove('visible');
+        });
+        
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileNav.classList.toggle('active');
+            const icon = this.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    mobileNav.classList.remove('active');
+                    mobileMenuToggle.querySelector('i').classList.add('fa-bars');
+                    mobileMenuToggle.querySelector('i').classList.remove('fa-times');
+                }
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        document.addEventListener('click', function(e) {
+            if (!mobileNav.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                mobileNav.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            }
+        });
+
+        // FullCalendar
+        document.addEventListener('DOMContentLoaded', function() {
+            const calendarEl = document.getElementById('calendar');
+            const calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                initialDate: '2025-12-28',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay'
+                },
+                height: 'auto',
+                events: [
+                    { title: 'Sunday Worship Service', rrule: { freq: 'weekly', byweekday: [6] }, color: '#00695c' },
+                    { title: 'Bible Study', rrule: { freq: 'weekly', byweekday: [1] }, color: '#388e3c' },
+                    { title: 'Midweek Prayer Meeting', rrule: { freq: 'weekly', byweekday: [2] }, color: '#1976d2' },
+                    { title: 'Community Feeding Program', rrule: { freq: 'weekly', byweekday: [3] }, color: '#009688' },
+                    { title: 'Youth Ministry', rrule: { freq: 'weekly', byweekday: [4] }, color: '#7b1fa2' },
+                    { title: 'Street Evangelism & Outreach', rrule: { freq: 'weekly', byweekday: [5] }, color: '#f57c00' },
+                    { title: 'Monthly Worship Night & All-Night Prayer', rrule: { freq: 'monthly', bymonthday: -1, byweekday: [4] }, color: '#d32f2f' },
+                    { title: 'New Year Prayer Vigil', start: '2026-01-01', color: '#ff9800' },
+                    { title: 'Community Feeding Program (Special)', start: '2026-01-04', color: '#009688' }
+                ],
+                eventClick: function(info) {
+                    let dateStr = info.event.start ? info.event.start.toLocaleDateString() : 'Recurring';
+                    alert('Event: ' + info.event.title + '\nDate: ' + dateStr);
+                }
+            });
+            calendar.render();
+        });
+
+        // Slideshow functionality (independent for each card)
+        let slideIndices = {};
+
+        function plusSlides(n, btn) {
+            const slideshow = btn.parentElement;
+            let slides = slideshow.querySelectorAll('.slide');
+            if (!slideIndices[slideshow]) slideIndices[slideshow] = 1;
+            showSlide(slides, slideIndices[slideshow] += n);
+        }
+
+        function showSlide(slides, n) {
+            if (n > slides.length) n = 1;
+            if (n < 1) n = slides.length;
+            slides.forEach(s => s.style.display = "none");
+            slides[n-1].style.display = "block";
+        }
+
+        // Initialize all slideshows
+        document.querySelectorAll('.slideshow-container').forEach(container => {
+            const slides = container.querySelectorAll('.slide');
+            if (slides.length > 0) {
+                showSlide(slides, 1);
+                slideIndices[container] = 1;
+            }
+        });
+    </script>
+
+    <!-- Slideshow Styles -->
+    <style>
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 15px 15px 0 0;
+        }
+        .slideshow-container .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+        }
+        .slideshow-container .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .slideshow-container .prev,
+        .slideshow-container .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 1.8rem;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+        .slideshow-container .prev { left: 15px; }
+        .slideshow-container .next { right: 15px; }
+        .slideshow-container .prev:hover,
+        .slideshow-container .next:hover {
+            background: rgba(0, 105, 92, 0.9);
+            transform: translateY(-50%) scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .slideshow-container { height: 250px; }
+        }
+    </style>
+</body>
+</html>
