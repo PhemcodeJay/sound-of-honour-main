@@ -3,160 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Sound Of Honour Global Services</title>
-    
+    <meta name="description" content="Services | Sound of Honour Global Services - Church services, outreach programs, music school, and professional gospel production.">
+    <title>Services | Sound of Honour Global Services</title>
+
+    <!-- Favicon (same as index.html) -->
+    <link rel="icon" type="image/x-icon" href="upload/images/logo.jpeg">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom Stylesheet -->
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ===== HEADER (consistent with other pages) ===== -->
-    <header class="site-header" id="siteHeader">
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <img src="upload/images/logo.jpeg" alt="Sound of Honour Logo" class="logo-img">
-                <div class="logo-text">Sound of Honour <span>Global Services</span></div>
-            </a>
-            
-            <!-- Desktop Navigation -->
-            <nav class="desktop-nav">
-                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
-                <a href="about.html" class="nav-link"><i class="fas fa-church"></i> About</a>
-                <a href="ministry.html" class="nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
-                <a href="services.html" class="nav-link active"><i class="fas fa-guitar"></i> Services</a>
-                <a href="events.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
-                <a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
-                <a href="#donate" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+    <!-- ===== VIDEO HERO SECTION ===== -->
+    <section class="video-hero" id="home">
+        <video autoplay muted loop playsinline class="video-background">
+            <source src="upload/videos/page-background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="video-overlay"></div>
+
+        <!-- Header -->
+        <header class="site-header" id="siteHeader">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img src="upload/images/logo.jpeg" alt="Sound of Honour Logo" class="logo-img">
+                    <div class="logo-text">Sound of Honour <span>Global Services</span></div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html" class="nav-link"><i class="fas fa-church"></i> About</a>
+                    <a href="ministry.html" class="nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
+                    <a href="services.html" class="nav-link active"><i class="fas fa-guitar"></i> Services</a>
+                    <a href="events.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
+                    <a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+                    <a href="donate.html" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+                </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="mobile-nav-link"><i class="fas fa-church"></i> About</a>
+                <a href="ministry.html" class="mobile-nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
+                <a href="services.html" class="mobile-nav-link active"><i class="fas fa-guitar"></i> Services</a>
+                <a href="events.html" class="mobile-nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
+                <a href="gallery.html" class="mobile-nav-link"><i class="fas fa-images"></i> Gallery</a>
+                <a href="donate.html" class="mobile-nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
             </nav>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
+        </header>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Our Services</h1>
+            <p class="hero-subtitle">Church worship • Outreach programs • Music education • Gospel production</p>
+            <div class="hero-buttons">
+                <a href="#church" class="btn btn-primary"><i class="fas fa-church"></i> Church Services</a>
+                <a href="#music" class="btn btn-secondary"><i class="fas fa-guitar"></i> Music Services</a>
+            </div>
         </div>
-        
-        <!-- Mobile Navigation -->
-        <nav class="mobile-nav">
-            <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
-            <a href="about.html" class="mobile-nav-link"><i class="fas fa-church"></i> About</a>
-            <a href="ministry.html" class="mobile-nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
-            <a href="services.html" class="mobile-nav-link active"><i class="fas fa-guitar"></i> Services</a>
-            <a href="events.html" class="mobile-nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
-            <a href="gallery.html" class="mobile-nav-link"><i class="fas fa-images"></i> Gallery</a>
-            <a href="#donate" class="mobile-nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
-        </nav>
-    </header>
+    </section>
 
     <!-- ===== MAIN CONTENT ===== -->
-    <main style="padding-top: 100px;">
-        <section class="tabs-section">
-            <div class="container" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
-                <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">Our Services</h2>
-                
-                <div class="tabs-header">
-                    <button class="tab-btn active" data-tab="church">Church Services</button>
-                    <button class="tab-btn" data-tab="outreach">Outreach & Support</button>
-                    <button class="tab-btn" data-tab="music">Music School & Production</button>
-                </div>
+    <main>
+        <section class="tabs-section section">
+            <h2 class="section-title">Explore Our Services</h2>
 
-                <!-- Church Services Tab -->
-                <div class="tab-content active" id="church">
-                    <div class="cards-grid">
-                        <div class="card">
-                            <div class="slideshow-container">
-                                <div class="slide fade"><img src="https://www.learnreligions.com/thmb/juyH-KY5YAJPB4jlK-LzW8j6iCU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Praise-and-Worship-58b5c8ba5f9b586046caf1fa.jpg" alt="Sunday Worship" class="card-img"></div>
-                                <div class="slide fade"><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Grace_Community_Church_Worship.jpg" alt="Congregation Singing" class="card-img"></div>
-                                <div class="slide fade"><img src="https://drc0fhsrp02et.cloudfront.net/wp-content/uploads/2013/03/Phatfish.jpg" alt="Worship Team" class="card-img"></div>
-                                <div class="slide fade"><img src="https://mysonginthenight.com/wp-content/uploads/5422452660_2480c82dd8_b.jpg" alt="Band Performance" class="card-img"></div>
-                                <div class="slide fade"><img src="https://media.istockphoto.com/id/2161124245/photo/christians-raising-their-hands-in-praise-and-worship-at-a-night-music-concert.jpg?s=612x612&w=0&k=20&c=2Lt_xDFW_Wt4V20K_BA2fH43ta9hBbQP_y6NfvBjjI0=" alt="Special Worship Night" class="card-img"></div>
-                                <a class="prev" onclick="plusSlides(-1, this)">❮</a>
-                                <a class="next" onclick="plusSlides(1, this)">❯</a>
-                            </div>
-                            <div class="card-content">
-                                <span class="card-category">Church Services</span>
-                                <h3 class="card-title">Sunday Worship Experience & Special Nights</h3>
-                                <p class="card-text">Powerful Sunday services, anointed worship team leading praise, and monthly special worship nights filled with God's presence.</p>
-                                <div class="card-footer">
-                                    <span class="card-date">Sundays 12 PM | Special Nights: Last Friday Monthly</span>
-                                </div>
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="church">Church Services</button>
+                <button class="tab-btn" data-tab="outreach">Outreach & Community</button>
+                <button class="tab-btn" data-tab="music">Music School & Production</button>
+            </div>
+
+            <!-- Church Services Tab -->
+            <div class="tab-content active" id="church">
+                <div class="cards-grid">
+                    <div class="card">
+                        <img src="upload/images/church-services.jpg" alt="Sunday Worship" class="card-img">
+                        <div class="card-overlay"><h3>Sunday Worship & Special Nights</h3></div>
+                        <div class="card-content">
+                            <span class="card-category">Church Services</span>
+                            <h3 class="card-title">Sunday Worship Experience & Special Nights</h3>
+                            <p class="card-text">Powerful Sunday services filled with anointed praise, worship, teaching, and fellowship. Monthly special worship nights for deeper encounter.</p>
+                            <div class="card-footer">
+                                <span class="card-date">Every Sunday • 12:00 PM | Special Nights: Last Friday Monthly</span>
+                                <a href="events.html" class="card-btn">View Calendar</a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Outreach & Support Tab -->
-                <div class="tab-content" id="outreach">
-                    <div class="cards-grid">
-                        <div class="card">
-                            <div class="slideshow-container">
-                                <div class="slide fade"><img src="http://cgo.bju.edu/uploads/8/4/9/2/84921828/l-davis-urban-evangelism-9-28-18_orig.jpg" alt="Street Evangelism" class="card-img"></div>
-                                <div class="slide fade"><img src="https://citygospelmovements.org/wp-content/uploads/2018/10/14519723_466600796797681_4824561406500738643_n.jpg" alt="Outreach" class="card-img"></div>
-                                <div class="slide fade"><img src="https://images.squarespace-cdn.com/content/v1/615200c5c4aebd4533e8aec5/61e8b3ce-5b52-4f14-bc5e-6d39a7c143d0/OLR+Food+5+021825.jpg" alt="Feeding Program" class="card-img"></div>
-                                <div class="slide fade"><img src="https://www.learnreligions.com/thmb/arguEimEj1vq8vslcH-CGCMWJMs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bible-study-girls-641213340-157034b06e204dcf9d5328679d7cb3a4.jpg" alt="Youth Ministry" class="card-img"></div>
-                                <div class="slide fade"><img src="https://www.vancopayments.com/hs-fs/hubfs/chub_backup/Volunteer%20Praying%20at%20Church.jpg?width=1024&height=683&name=Volunteer%20Praying%20at%20Church.jpg" alt="Prayer Meeting" class="card-img"></div>
-                                <a class="prev" onclick="plusSlides(-1, this)">❮</a>
-                                <a class="next" onclick="plusSlides(1, this)">❯</a>
-                            </div>
-                            <div class="card-content">
-                                <span class="card-category">Outreach</span>
-                                <h3 class="card-title">Outreach, Support & Community Programs</h3>
-                                <p class="card-text">Street evangelism, feeding programs, youth empowerment, prayer meetings, family assistance, couples ministry, and Bible study.</p>
-                                <div class="card-footer">
-                                    <span class="card-date">Various Days – See Events Calendar</span>
-                                </div>
+            <!-- Outreach & Community Tab -->
+            <div class="tab-content" id="outreach">
+                <div class="cards-grid">
+                    <div class="card">
+                        <img src="upload/images/outreach.jpg" alt="Outreach Programs" class="card-img">
+                        <div class="card-overlay"><h3>Outreach & Community</h3></div>
+                        <div class="card-content">
+                            <span class="card-category">Community Impact</span>
+                            <h3 class="card-title">Outreach, Support & Community Programs</h3>
+                            <p class="card-text">Street evangelism, feeding programs, youth empowerment, prayer meetings, family assistance, couples ministry, and Bible study groups.</p>
+                            <div class="card-footer">
+                                <span class="card-date">Various Days – See Events Calendar</span>
+                                <a href="events.html" class="card-btn">View Calendar</a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Music School & Production Tab -->
-                <div class="tab-content" id="music">
-                    <div class="cards-grid">
-                        <div class="card">
-                            <div class="slideshow-container">
-                                <div class="slide fade"><img src="https://assets.worshipartistry.com/sites/default/files/page-images/tour-drums-hero.jpg" alt="Drums Training" class="card-img"></div>
-                                <div class="slide fade"><img src="https://assets.worshipartistry.com/sites/default/files/page-images/tour-keys5a.jpg" alt="Keyboard Lesson" class="card-img"></div>
-                                <div class="slide fade"><img src="https://i.ytimg.com/vi/VnL5SXUonq8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB2vC9Z1He5rlBK9VCoIGXl3gFJRw" alt="Studio Session" class="card-img"></div>
-                                <div class="slide fade"><img src="https://www.careersinmusic.com/wp-content/uploads/2018/05/session-singer.jpg" alt="Recording Singer" class="card-img"></div>
-                                <div class="slide fade"><img src="https://ncbaptist.org/wp-content/uploads/renewing-worship-training-web-banner-1920x1080-1.jpg" alt="Worship Workshop" class="card-img"></div>
-                                <a class="prev" onclick="plusSlides(-1, this)">❮</a>
-                                <a class="next" onclick="plusSlides(1, this)">❯</a>
-                            </div>
-                            <div class="card-content">
-                                <span class="card-category">Music Services</span>
-                                <h3 class="card-title">Sound of Honour Music School & Gospel Production</h3>
-                                <p class="card-text">Professional training in vocals, guitar, keyboard, drums, bass & theory. Full-service recording studio, mixing/mastering, and worship workshops.</p>
-                                <div class="card-footer">
-                                    <a href="https://wa.me/254711509194?text=I'm%20interested%20in%20music%20training%20or%20recording" class="card-btn" target="_blank">
-                                        <i class="fab fa-whatsapp"></i> Enquire Now
-                                    </a>
-                                </div>
+            <!-- Music School & Production Tab -->
+            <div class="tab-content" id="music">
+                <div class="cards-grid">
+                    <div class="card">
+                        <img src="upload/images/music-services.jpg" alt="Music School & Studio" class="card-img">
+                        <div class="card-overlay"><h3>Music Academy & Studio</h3></div>
+                        <div class="card-content">
+                            <span class="card-category">Music Services</span>
+                            <h3 class="card-title">Sound of Honour Music School & Gospel Production</h3>
+                            <p class="card-text">Professional training in vocals, guitar, keyboard, drums, bass & theory. Full-service recording studio with mixing, mastering, and worship workshops.</p>
+                            <div class="card-footer">
+                                <a href="https://wa.me/254711509194?text=I'm%20interested%20in%20music%20training%20or%20recording" class="card-btn" target="_blank">
+                                    <i class="fab fa-whatsapp"></i> Enquire Now
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Call to Action -->
+        <section class="section">
+            <div class="hero-content" style="position: static; transform: none; padding: 60px 20px; background: linear-gradient(135deg, #00695c, #004d40); color: white;">
+                <h2 class="hero-title" style="color: white;">Experience the Difference</h2>
+                <p class="hero-subtitle">Join our services, enroll in music classes, or partner in outreach.</p>
+                <div class="hero-buttons">
+                    <a href="events.html" class="btn btn-primary"><i class="fas fa-calendar"></i> View Events</a>
+                    <a href="donate.html" class="btn btn-secondary"><i class="fas fa-hand-holding-heart"></i> Support Us</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- ===== FOOTER (same as other pages) ===== -->
+    <!-- ===== FOOTER ===== -->
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Sound of Honour Global Services</h4>
-                <p>Spreading the Gospel through worship, prayer, and compassionate action since 2019.</p>
-                <p>"Through music, prayer, and compassionate action, we aim to uplift lives, strengthen faith, and bring hope to those in need."</p>
+                <p>Spreading the Gospel through worship, music education, evangelism, and compassionate action since 2019.</p>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Contact Information</h4>
                 <p><i class="fas fa-map-marker-alt"></i> Kamiti Rd, Kahawa West, Nairobi, Kenya</p>
                 <p><i class="fas fa-phone"></i> +254 711509194</p>
-                <p><i class="fas fa-envelope"></i> gbrlrotimi@gmail.com</p>
-                
+                <p><i class="fas fa-envelope"></i> info@soundofhonour.org</p>
+
                 <div class="social-links">
                     <a href="https://facebook.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://instagram.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -164,154 +178,58 @@
                     <a href="https://twitter.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Quick Links</h4>
-                <p><a href="#ministry" style="color: white; text-decoration: none;">Ministry Areas</a></p>
-                <p><a href="gallery.html" style="color: white; text-decoration: none;">Photo Gallery</a></p>
-                <p><a href="events.html" style="color: white; text-decoration: none;">Upcoming Events</a></p>
-                <p><a href="#donate" style="color: white; text-decoration: none;">Support Our Work</a></p>
+                <p><a href="ministry.html" style="color: white; text-decoration: none;">Ministry Areas</a></p>
+                <p><a href="events.html" style="color: white; text-decoration: none;">Events</a></p>
+                <p><a href="gallery.html" style="color: white; text-decoration: none;">Gallery</a></p>
+                <p><a href="donate.html" style="color: white; text-decoration: none;">Donate</a></p>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
-            <p>© 2025 Sound Of Honour Global Services. All rights reserved.</p>
+            <p>© 2025 Sound of Honour Global Services. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+    <!-- ===== FLOATING BUTTONS ===== -->
     <a href="https://wa.me/254711509194" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- ===== BACK TO TOP BUTTON ===== -->
-    <a href="#siteHeader" class="back-to-top" id="backToTop">
+    <a href="#home" class="back-to-top" id="backToTop">
         <i class="fas fa-chevron-up"></i>
     </a>
 
     <!-- ===== SCRIPTS ===== -->
     <script>
-        // Mobile menu, scroll effects, back-to-top
-        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-        const mobileNav = document.querySelector('.mobile-nav');
-        const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
-        const siteHeader = document.getElementById('siteHeader');
-        const backToTop = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 100) siteHeader.classList.add('scrolled');
-            else siteHeader.classList.remove('scrolled');
-            
-            if (window.scrollY > 500) backToTop.classList.add('visible');
-            else backToTop.classList.remove('visible');
-        });
-        
-        mobileMenuToggle.addEventListener('click', function() {
-            mobileNav.classList.toggle('active');
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.mobile-nav').classList.toggle('active');
             const icon = this.querySelector('i');
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-times');
         });
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                if (window.innerWidth <= 768) {
-                    mobileNav.classList.remove('active');
-                    mobileMenuToggle.querySelector('i').classList.add('fa-bars');
-                    mobileMenuToggle.querySelector('i').classList.remove('fa-times');
-                }
-                navLinks.forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-        
-        document.addEventListener('click', function(e) {
-            if (!mobileNav.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
-                mobileNav.classList.remove('active');
-                const icon = mobileMenuToggle.querySelector('i');
-                icon.classList.add('fa-bars');
-                icon.classList.remove('fa-times');
-            }
+
+        // Header & back-to-top on scroll
+        window.addEventListener('scroll', function() {
+            document.querySelector('.site-header').classList.toggle('scrolled', window.scrollY > 100);
+            document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 500);
         });
 
         // Tab functionality
-        const tabBtns = document.querySelectorAll('.tab-btn');
-        const tabContents = document.querySelectorAll('.tab-content');
-        
-        tabBtns.forEach(btn => {
+        document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.addEventListener('click', function() {
                 const tabId = this.getAttribute('data-tab');
-                tabBtns.forEach(b => b.classList.remove('active'));
-                tabContents.forEach(c => c.classList.remove('active'));
+
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
                 this.classList.add('active');
                 document.getElementById(tabId).classList.add('active');
             });
         });
-
-        // Slideshow functionality (independent for each card)
-        let slideIndices = {};
-
-        function plusSlides(n, btn) {
-            const slideshow = btn.parentElement;
-            let slides = slideshow.querySelectorAll('.slide');
-            if (!slideIndices[slideshow]) slideIndices[slideshow] = 1;
-            showSlide(slides, slideIndices[slideshow] += n);
-        }
-
-        function showSlide(slides, n) {
-            if (n > slides.length) n = 1;
-            if (n < 1) n = slides.length;
-            slides.forEach(s => s.style.display = "none");
-            slides[n-1].style.display = "block";
-        }
-
-        // Initialize all slideshows
-        document.querySelectorAll('.slideshow-container').forEach(container => {
-            showSlide(container.querySelectorAll('.slide'), 1);
-            slideIndices[container] = 1;
-        });
     </script>
-
-    <style>
-        /* Simple Slideshow Styles (integrated with existing card styles) */
-        .slideshow-container {
-            position: relative;
-            width: 100%;
-            height: 300px;
-            overflow: hidden;
-        }
-        .slide {
-            display: none;
-            width: 100%;
-            height: 100%;
-        }
-        .slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.3s;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            background-color: rgba(0,0,0,0.5);
-        }
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        .prev:hover, .next:hover {
-            background-color: rgba(0,105,92,0.8);
-        }
-    </style>
 </body>
 </html>

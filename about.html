@@ -3,95 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Sound Of Honour Global Services</title>
-    
+    <meta name="description" content="Sound of Honour Global Services - Our history, vision, and diverse services including music school, music production, community welfare, evangelism, communion fellowship, prayers, concerts of praise, and festivals.">
+    <title>About Us | Sound of Honour Global Services</title>
+
+    <!-- Favicon (same as index.html) -->
+    <link rel="icon" type="image/x-icon" href="upload/images/logo.jpeg">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom Stylesheet -->
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ===== HEADER (same as index.html) ===== -->
-    <header class="site-header" id="siteHeader">
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <img src="upload/images/logo.jpeg" alt="Sound of Honour Logo" class="logo-img">
-                <div class="logo-text">Sound of Honour <span>Global Services</span></div>
-            </a>
-            
-            <!-- Desktop Navigation -->
-            <nav class="desktop-nav">
-                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
-                <a href="about.html" class="nav-link active"><i class="fas fa-church"></i> About</a>
-                <a href="#ministry" class="nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
-                <a href="#services" class="nav-link"><i class="fas fa-guitar"></i> Services</a>
-                <a href="#events" class="nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
-                <a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
-                <a href="#donate" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+    <!-- ===== VIDEO HERO SECTION ===== -->
+    <section class="video-hero" id="home">
+        <video autoplay muted loop playsinline class="video-background">
+            <source src="upload/videos/page-background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="video-overlay"></div>
+
+        <!-- Header -->
+        <header class="site-header" id="siteHeader">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img src="upload/images/logo.jpeg" alt="Sound of Honour Logo" class="logo-img">
+                    <div class="logo-text">Sound of Honour <span>Global Services</span></div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html" class="nav-link active"><i class="fas fa-church"></i> About</a>
+                    <a href="index.html#ministry" class="nav-link"><i class="fas fa-hands-praying"></i> Services</a>
+                    <a href="index.html#events" class="nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
+                    <a href="index.html#gallery" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+                    <a href="index.html#donate" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+                </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="mobile-nav-link active"><i class="fas fa-church"></i> About</a>
+                <a href="index.html#ministry" class="mobile-nav-link"><i class="fas fa-hands-praying"></i> Services</a>
+                <a href="index.html#events" class="mobile-nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
+                <a href="index.html#gallery" class="mobile-nav-link"><i class="fas fa-images"></i> Gallery</a>
+                <a href="index.html#donate" class="mobile-nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
             </nav>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
+        </header>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">About Sound of Honour Global Services</h1>
+            <p class="hero-subtitle">Empowering lives through worship, music education, community transformation, and the power of the Gospel since 2019</p>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary"><i class="fas fa-play-circle"></i> Our Services</a>
+                <a href="#vision" class="btn btn-secondary"><i class="fas fa-eye"></i> Our Vision</a>
+            </div>
         </div>
-        
-        <!-- Mobile Navigation -->
-        <nav class="mobile-nav">
-            <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
-            <a href="about.html" class="mobile-nav-link active"><i class="fas fa-church"></i> About</a>
-            <a href="#ministry" class="mobile-nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
-            <a href="#services" class="mobile-nav-link"><i class="fas fa-guitar"></i> Services</a>
-            <a href="#events" class="mobile-nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
-            <a href="#gallery" class="mobile-nav-link"><i class="fas fa-images"></i> Gallery</a>
-            <a href="#donate" class="mobile-nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
-        </nav>
-    </header>
+    </section>
 
     <!-- ===== MAIN CONTENT ===== -->
-    <main style="padding-top: 100px;"> <!-- Extra padding to avoid overlap with fixed header -->
-        <section class="section" id="about">
+    <main>
+
+        <!-- Founding Story -->
+        <section id="about" class="section">
+            <h2 class="section-title">Our Journey & Vision</h2>
+
             <div class="founding-story">
                 <div class="story-content">
                     <div class="story-text">
-                        <h2 class="section-title">Our Ministry Journey</h2>
-                        <p>Welcome to <strong>Sound Of Honour Global Services</strong></p>
-                        <p>Founded in 2019 during the challenges of the COVID-19 pandemic, our ministry began with a calling to serve through door-to-door evangelism and feeding programs for children. Guided by God's vision, we discovered the power of music and worship as a tool for healing, encouragement, and spiritual growth.</p>
-                        <p>Today, we dedicate ourselves to Christian worship, community empowerment, music education, and gospel production. Through music, prayer, and compassionate action, we aim to uplift lives, strengthen faith, and bring hope to those in need.</p>
-
-                        <h3>Our Mission Focus</h3>
-                        <ul style="margin-left: 20px; line-height: 1.8; color: #555;">
-                            <li>Heartfelt Worship Experiences</li>
-                            <li>Intercessory Prayer Ministry</li>
-                            <li>Community Support Programs</li>
-                            <li>Guidance & Mentorship</li>
-                        </ul>
+                        <h3>Founded in Faith – Born in Crisis</h3>
+                        <p>Sound of Honour Global Services was birthed in 2019 during the global COVID-19 pandemic. What began as door-to-door evangelism and feeding programs for children has grown into a vibrant ministry focused on worship, music education, spiritual empowerment, and community transformation.</p>
+                        <p>Through the power of music, prayer, and compassionate action, we are raising a generation that honours God and serves humanity with excellence and love.</p>
                     </div>
                     <div class="story-image">
-                        <img src="upload/images/founding-story.jpg" alt="Our Ministry Journey" style="width: 100%; border-radius: 15px;">
+                        <img src="upload/images/ministry.jpg" alt="Ministry Team">
                     </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" id="vision">Our Vision & Mission</h2>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon"><i class="fas fa-music"></i></div>
+                    <h4>Raise Worshippers</h4>
+                    <p>Train and equip individuals in music, worship, and spiritual leadership</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon"><i class="fas fa-hands-helping"></i></div>
+                    <h4>Transform Communities</h4>
+                    <p>Provide practical support, welfare, and hope to the needy</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon"><i class="fas fa-bible"></i></div>
+                    <h4>Spread the Gospel</h4>
+                    <p>Evangelize boldly through music, outreach, and fellowship</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon"><i class="fas fa-pray"></i></div>
+                    <h4>Build Prayer & Fellowship</h4>
+                    <p>Foster deep communion, intercession, and spiritual unity</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services -->
+        <section id="services" class="section">
+            <h2 class="section-title">Our Core Services</h2>
+
+            <div class="cards-grid">
+                <!-- Music School -->
+                <div class="card">
+                    <img src="upload/images/music-school.jpg" alt="Music School" class="card-img">
+                    <div class="card-overlay">
+                        <h3 class="gallery-title">Sound of Honour Music Academy</h3>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Education</span>
+                        <h3 class="card-title">Music School</h3>
+                        <p class="card-text">Professional training in voice, instruments (piano, guitar, drums, etc.), music theory, choir direction, and worship leading.</p>
+                        <div class="card-footer">
+                            <span class="card-date">Classes Daily</span>
+                            <button class="card-btn" onclick="alert('Contact us to enroll in our music academy!')">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Production -->
+                <div class="card">
+                    <img src="upload/images/music-production.jpg" alt="Music Production" class="card-img">
+                    <div class="card-overlay">
+                        <h3 class="gallery-title">Professional Recording Studio</h3>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Production</span>
+                        <h3 class="card-title">Music Production</h3>
+                        <p class="card-text">State-of-the-art recording, mixing, mastering, songwriting, and production services for artists and worship teams.</p>
+                        <div class="card-footer">
+                            <span class="card-date">Studio Sessions Available</span>
+                            <button class="card-btn" onclick="contactWhatsApp('music production')">Book Studio</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community Welfare -->
+                <div class="card">
+                    <img src="upload/images/community-welfare.jpg" alt="Community Support" class="card-img">
+                    <div class="card-overlay">
+                        <h3 class="gallery-title">Community Welfare Program</h3>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Outreach</span>
+                        <h3 class="card-title">Community Welfare</h3>
+                        <p class="card-text">Feeding programs, school fees support, medical assistance, and empowerment initiatives for orphans and underprivileged families.</p>
+                        <div class="card-footer">
+                            <span class="card-date">Ongoing</span>
+                            <button class="card-btn" onclick="donateViaPayPal('community')">Support Us</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evangelism -->
+                <div class="card">
+                    <img src="upload/images/evangelism.jpg" alt="Evangelism" class="card-img">
+                    <div class="card-overlay">
+                        <h3 class="gallery-title">Street & Crusade Evangelism</h3>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Outreach</span>
+                        <h3 class="card-title">Evangelism</h3>
+                        <p class="card-text">Door-to-door ministry, open-air crusades, and street evangelism to share the Gospel and lead souls to Christ.</p>
+                        <div class="card-footer">
+                            <span class="card-date">Every Saturday</span>
+                            <button class="card-btn" onclick="alert('Join our evangelism team!')">Join Team</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Communion Fellowship & Prayers -->
+                <div class="card">
+                    <img src="upload/images/prayer-fellowship.jpg" alt="Prayer & Fellowship" class="card-img">
+                    <div class="card-overlay">
+                        <h3 class="gallery-title">Communion, Fellowship & Prayer</h3>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Spiritual Growth</span>
+                        <h3 class="card-title">Communion & Prayer Fellowship</h3>
+                        <p class="card-text">Weekly prayer meetings, communion services, all-night vigils, and small group fellowships for spiritual deepening.</p>
+                        <div class="card-footer">
+                            <span class="card-date">Wednesdays & Fridays</span>
+                            <button class="card-btn" onclick="document.getElementById('prayerForm').scrollIntoView({behavior: 'smooth'})">Join Prayer</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Concerts of Praise & Festivals -->
+                <div class="card">
+                    <img src="upload/images/concert.jpg" alt="Concerts & Festivals" class="card-img">
+                    <div class="card-overlay">
+                        <h3 class="gallery-title">Concerts of Praise & Festivals</h3>
+                    </div>
+                    <div class="card-content">
+                        <span class="card-category">Events</span>
+                        <h3 class="card-title">Concerts of Praise & Festivals</h3>
+                        <p class="card-text">Annual and monthly concerts, worship festivals, revival nights, and music showcases to glorify God.</p>
+                        <div class="card-footer">
+                            <span class="card-date">Monthly & Annual</span>
+                            <button class="card-btn" onclick="alert('Check our events calendar for upcoming concerts!')">View Events</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section">
+            <div class="hero-content" style="position: static; transform: none; padding: 60px 20px; background: linear-gradient(135deg, #00695c, #004d40); color: white;">
+                <h2 class="hero-title" style="color: white;">Join Us in Transforming Lives</h2>
+                <p class="hero-subtitle">Whether through music, prayer, evangelism, or community support, there’s a place for you in the Sound of Honour family.</p>
+                <div class="hero-buttons">
+                    <a href="index.html#donate" class="btn btn-primary"><i class="fas fa-hand-holding-heart"></i> Support Our Work</a>
+                    <a href="index.html#contactSection" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Us</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- ===== FOOTER (same as index.html) ===== -->
+    <!-- ===== FOOTER ===== -->
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Sound of Honour Global Services</h4>
-                <p>Spreading the Gospel through worship, prayer, and compassionate action since 2019.</p>
-                <p>"Through music, prayer, and compassionate action, we aim to uplift lives, strengthen faith, and bring hope to those in need."</p>
+                <p>Spreading the Gospel through worship, music education, evangelism, and compassionate action since 2019.</p>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Contact Information</h4>
                 <p><i class="fas fa-map-marker-alt"></i> Kamiti Rd, Kahawa West, Nairobi, Kenya</p>
                 <p><i class="fas fa-phone"></i> +254 711509194</p>
-                <p><i class="fas fa-envelope"></i> gbrlrotimi@gmail.com</p>
-                
+                <p><i class="fas fa-envelope"></i> info@soundofhonour.org</p>
+
                 <div class="social-links">
                     <a href="https://facebook.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://instagram.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -99,18 +260,17 @@
                     <a href="https://twitter.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Quick Links</h4>
-                <p><a href="#ministry" style="color: white; text-decoration: none;">Ministry Areas</a></p>
-                <p><a href="#gallery" style="color: white; text-decoration: none;">Photo Gallery</a></p>
-                <p><a href="#events" style="color: white; text-decoration: none;">Upcoming Events</a></p>
-                <p><a href="#donate" style="color: white; text-decoration: none;">Support Our Work</a></p>
+                <p><a href="index.html#ministry" style="color: white; text-decoration: none;">Our Services</a></p>
+                <p><a href="index.html#events" style="color: white; text-decoration: none;">Upcoming Events</a></p>
+                <p><a href="index.html#donate" style="color: white; text-decoration: none;">Support Our Work</a></p>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
-            <p>© 2025 Sound Of Honour Global Services. All rights reserved.</p>
+            <p>© 2025 Sound of Honour Global Services. All rights reserved.</p>
         </div>
     </footer>
 
@@ -120,66 +280,26 @@
     </a>
 
     <!-- ===== BACK TO TOP BUTTON ===== -->
-    <a href="#siteHeader" class="back-to-top" id="backToTop">
+    <a href="#home" class="back-to-top" id="backToTop">
         <i class="fas fa-chevron-up"></i>
     </a>
 
-    <!-- ===== SCRIPTS (same as index.html - needed for mobile menu, scroll effects, etc.) ===== -->
+    <!-- ===== SCRIPTS ===== -->
     <script>
-        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-        const mobileNav = document.querySelector('.mobile-nav');
-        const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
-        const siteHeader = document.getElementById('siteHeader');
-        const backToTop = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 100) {
-                siteHeader.classList.add('scrolled');
-            } else {
-                siteHeader.classList.remove('scrolled');
-            }
-            if (window.scrollY > 500) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        });
-        
-        mobileMenuToggle.addEventListener('click', function() {
-            mobileNav.classList.toggle('active');
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.mobile-nav').classList.toggle('active');
             const icon = this.querySelector('i');
-            if (mobileNav.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
         });
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                if (window.innerWidth <= 768) {
-                    mobileNav.classList.remove('active');
-                    const icon = mobileMenuToggle.querySelector('i');
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-                navLinks.forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!mobileNav.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
-                if (mobileNav.classList.contains('active')) {
-                    mobileNav.classList.remove('active');
-                    const icon = mobileMenuToggle.querySelector('i');
-                    icon.classList.remove('fa-times');
-                    icon.classList.add('fa-bars');
-                }
-            }
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            document.querySelector('.site-header').classList.toggle('scrolled', window.scrollY > 100);
+
+            // Back to top button
+            document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 500);
         });
     </script>
 </body>

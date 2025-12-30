@@ -3,150 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ministry - Sound Of Honour Global Services</title>
-    
+    <meta name="description" content="Ministry Areas | Sound of Honour Global Services - Worship & Prayer, Outreach & Community Service, Music Training & Gospel Production">
+    <title>Ministry | Sound of Honour Global Services</title>
+
+    <!-- Favicon (same as index.html) -->
+    <link rel="icon" type="image/x-icon" href="upload/images/logo.jpeg">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Custom Stylesheet -->
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ===== HEADER ===== -->
-    <header class="site-header" id="siteHeader">
-        <div class="header-container">
-            <a href="index.html" class="logo">
-                <img src="upload/images/logo.jpeg" alt="Sound of Honour Logo" class="logo-img">
-                <div class="logo-text">Sound of Honour <span>Global Services</span></div>
-            </a>
-            
-            <!-- Desktop Navigation -->
-            <nav class="desktop-nav">
-                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
-                <a href="about.html" class="nav-link"><i class="fas fa-church"></i> About</a>
-                <a href="ministry.html" class="nav-link active"><i class="fas fa-hands-praying"></i> Ministry</a>
-                <a href="services.html" class="nav-link"><i class="fas fa-guitar"></i> Services</a>
-                <a href="events.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
-                <a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
-                <a href="donate.html" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+    <!-- ===== VIDEO HERO SECTION ===== -->
+    <section class="video-hero" id="home">
+        <video autoplay muted loop playsinline class="video-background">
+            <source src="upload/videos/page-background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="video-overlay"></div>
+
+        <!-- Header -->
+        <header class="site-header" id="siteHeader">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img src="upload/images/logo.jpeg" alt="Sound of Honour Logo" class="logo-img">
+                    <div class="logo-text">Sound of Honour <span>Global Services</span></div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="desktop-nav">
+                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                    <a href="about.html" class="nav-link"><i class="fas fa-church"></i> About</a>
+                    <a href="ministry.html" class="nav-link active"><i class="fas fa-hands-praying"></i> Ministry</a>
+                    <a href="events.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
+                    <a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+                    <a href="donate.html" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+                </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html" class="mobile-nav-link"><i class="fas fa-church"></i> About</a>
+                <a href="ministry.html" class="mobile-nav-link active"><i class="fas fa-hands-praying"></i> Ministry</a>
+                <a href="events.html" class="mobile-nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
+                <a href="gallery.html" class="mobile-nav-link"><i class="fas fa-images"></i> Gallery</a>
+                <a href="donate.html" class="mobile-nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
             </nav>
-            
-            <!-- Mobile Menu Toggle -->
-            <button class="mobile-menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
+        </header>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Our Ministry Areas</h1>
+            <p class="hero-subtitle">Worship • Prayer • Outreach • Music Training • Community Transformation</p>
+            <div class="hero-buttons">
+                <a href="#worship" class="btn btn-primary"><i class="fas fa-music"></i> Worship & Prayer</a>
+                <a href="#outreach" class="btn btn-secondary"><i class="fas fa-hands-helping"></i> Outreach</a>
+            </div>
         </div>
-        
-        <!-- Mobile Navigation -->
-        <nav class="mobile-nav">
-            <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
-            <a href="about.html" class="mobile-nav-link"><i class="fas fa-church"></i> About</a>
-            <a href="ministry.html" class="mobile-nav-link active"><i class="fas fa-hands-praying"></i> Ministry</a>
-            <a href="services.html" class="mobile-nav-link"><i class="fas fa-guitar"></i> Services</a>
-            <a href="events.html" class="mobile-nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
-            <a href="gallery.html" class="mobile-nav-link"><i class="fas fa-images"></i> Gallery</a>
-            <a href="donate.html" class="mobile-nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
-        </nav>
-    </header>
+    </section>
 
     <!-- ===== MAIN CONTENT ===== -->
-    <main style="padding-top: 100px;">
-        <section class="section" id="ministry">
-            <div class="container" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
-                <h2 class="section-title" style="text-align: center; margin-bottom: 60px;">Our Ministry Areas</h2>
+    <main>
+        <!-- Worship & Prayer Ministry -->
+        <section class="section" id="worship">
+            <h2 class="section-title">Worship & Prayer Ministry</h2>
 
-                <!-- Worship & Prayer Section -->
-                <div class="mission-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px; margin-bottom: 80px;">
-                    <div class="card">
-                        <!-- Slideshow for Worship & Prayer -->
-                        <div class="slideshow-container">
-                            <div class="slide fade"><img src="https://images.pexels.com/photos/6899253/pexels-photo-6899253.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Powerful Worship Service" class="card-img"></div>
-                            <div class="slide fade"><img src="https://images.pexels.com/photos/6899268/pexels-photo-6899268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Worship Team" class="card-img"></div>
-                            <div class="slide fade"><img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Praise Band" class="card-img"></div>
-                            <div class="slide fade"><img src="https://images.pexels.com/photos/6899270/pexels-photo-6899270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Prayer Gathering" class="card-img"></div>
-                            <div class="slide fade"><img src="https://images.unsplash.com/photo-1507699626224-7a07e3d13187?auto=format&fit=crop&w=800&q=80" alt="All-Night Vigil" class="card-img"></div>
-                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
-                            <a class="next" onclick="plusSlides(1, this)">❯</a>
-                        </div>
-
-                        <div class="card-content" style="text-align: center;">
-                            <i class="fas fa-music" style="font-size: 4rem; color: #00695c; margin-bottom: 20px;"></i>
-                            <h3 class="card-title">Worship & Prayer Ministry</h3>
-                            <p class="card-text">We create anointed atmospheres of worship and intercession where lives are transformed through encountering God's presence.</p>
-                            <ul style="text-align: left; margin: 20px 0; line-height: 2; color: #555;">
-                                <li><strong>Sunday Worship Service</strong> – Every Sunday at 12:00 PM</li>
-                                <li><strong>Worship Team Practice</strong> – Wednesdays</li>
-                                <li><strong>Special Worship Nights</strong> – Last Friday of every month</li>
-                                <li><strong>Weekly Prayer Gathering</strong> – Wednesdays at 7:00 PM</li>
-                                <li><strong>All-Night Prayer Vigil</strong> – Last Friday of every month</li>
-                            </ul>
-                            <button class="card-btn" onclick="window.location.href='events.html'">View Calendar</button>
-                        </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <img src="upload/images/worship-prayer.jpg" alt="Worship & Prayer" class="card-img">
+                    <div class="card-overlay"><h3>Worship & Prayer</h3></div>
+                    <div class="card-content">
+                        <div class="mission-icon"><i class="fas fa-music"></i></div>
+                        <p class="card-text">We create anointed atmospheres of worship and intercession where lives are transformed through encountering God's presence.</p>
+                        <ul style="text-align: left; margin: 20px 0; line-height: 2; color: #555;">
+                            <li><strong>Sunday Worship Service</strong> – Every Sunday at 12:00 PM</li>
+                            <li><strong>Worship Team Practice</strong> – Wednesdays</li>
+                            <li><strong>Special Worship Nights</strong> – Last Friday of every month</li>
+                            <li><strong>Weekly Prayer Gathering</strong> – Wednesdays at 7:00 PM</li>
+                            <li><strong>All-Night Prayer Vigil</strong> – Last Friday of every month</li>
+                        </ul>
+                        <a href="events.html" class="btn btn-primary">View Full Calendar</a>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Outreach & Community Section -->
-                <div class="mission-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px; margin-bottom: 80px;">
-                    <div class="card">
-                        <!-- Slideshow for Outreach & Community -->
-                        <div class="slideshow-container">
-                            <div class="slide fade"><img src="https://images.pexels.com/photos/6899262/pexels-photo-6899262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Feeding Program" class="card-img"></div>
-                            <div class="slide fade"><img src="https://images.pexels.com/photos/6899269/pexels-photo-6899269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Street Evangelism" class="card-img"></div>
-                            <div class="slide fade"><img src="https://images.pexels.com/photos/6899265/pexels-photo-6899265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Youth Ministry" class="card-img"></div>
-                            <div class="slide fade"><img src="https://images.pexels.com/photos/6899271/pexels-photo-6899271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Couples Ministry" class="card-img"></div>
-                            <div class="slide fade"><img src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Community Support" class="card-img"></div>
-                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
-                            <a class="next" onclick="plusSlides(1, this)">❯</a>
-                        </div>
+        <!-- Outreach & Community Service -->
+        <section class="section" id="outreach">
+            <h2 class="section-title">Outreach & Community Service</h2>
 
-                        <div class="card-content" style="text-align: center;">
-                            <i class="fas fa-hands-helping" style="font-size: 4rem; color: #00695c; margin-bottom: 20px;"></i>
-                            <h3 class="card-title">Outreach & Community Service</h3>
-                            <p class="card-text">We extend God's love beyond the church walls through evangelism, compassion, and empowerment programs.</p>
-                            <ul style="text-align: left; margin: 20px 0; line-height: 2; color: #555;">
-                                <li><strong>Street Evangelism</strong> – Every Saturday at 10:00 AM</li>
-                                <li><strong>Community Feeding Program</strong> – Every Thursday</li>
-                                <li><strong>Youth Empowerment Ministry</strong> – Fridays at 5:00 PM</li>
-                                <li><strong>Family Assistance Program</strong> – Ongoing support</li>
-                                <li><strong>Couples Ministry</strong> – By appointment</li>
-                                <li><strong>Bible Study & Discipleship</strong> – Tuesdays at 6:00 PM</li>
-                            </ul>
-                            <button class="card-btn" onclick="window.location.href='events.html'">View Calendar</button>
-                        </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <img src="upload/images/outreach-community.jpg" alt="Outreach & Community" class="card-img">
+                    <div class="card-overlay"><h3>Outreach & Community</h3></div>
+                    <div class="card-content">
+                        <div class="mission-icon"><i class="fas fa-hands-helping"></i></div>
+                        <p class="card-text">We extend God's love beyond the church walls through evangelism, compassion, and empowerment programs.</p>
+                        <ul style="text-align: left; margin: 20px 0; line-height: 2; color: #555;">
+                            <li><strong>Street Evangelism</strong> – Every Saturday at 10:00 AM</li>
+                            <li><strong>Community Feeding Program</strong> – Every Thursday</li>
+                            <li><strong>Youth Empowerment Ministry</strong> – Fridays at 5:00 PM</li>
+                            <li><strong>Family Assistance Program</strong> – Ongoing support</li>
+                            <li><strong>Couples Ministry</strong> – By appointment</li>
+                            <li><strong>Bible Study & Discipleship</strong> – Tuesdays at 6:00 PM</li>
+                        </ul>
+                        <a href="events.html" class="btn btn-primary">View Full Calendar</a>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Music Training & Production Section -->
-                <div class="mission-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 40px;">
-                    <div class="card">
-                        <!-- Slideshow for Music Training -->
-                        <div class="slideshow-container">
-                            <div class="slide fade"><img src="https://images.pexels.com/photos/6899267/pexels-photo-6899267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Instrument Training" class="card-img"></div>
-                            <div class="slide fade"><img src="https://images.unsplash.com/photo-1515169067868-042c3e1a9d74?auto=format&fit=crop&w=800&q=80" alt="One-on-One Training" class="card-img"></div>
-                            <div class="slide fade"><img src="https://images.pexels.com/photos/6899264/pexels-photo-6899264.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Studio Recording" class="card-img"></div>
-                            <div class="slide fade"><img src="https://assets.worshipartistry.com/sites/default/files/page-images/tour-drums-hero.jpg" alt="Drums Class" class="card-img"></div>
-                            <div class="slide fade"><img src="https://assets.worshipartistry.com/sites/default/files/page-images/tour-keys5a.jpg" alt="Keyboard Lesson" class="card-img"></div>
-                            <a class="prev" onclick="plusSlides(-1, this)">❮</a>
-                            <a class="next" onclick="plusSlides(1, this)">❯</a>
-                        </div>
+        <!-- Music Training & Gospel Production -->
+        <section class="section" id="music">
+            <h2 class="section-title">Music Training & Gospel Production</h2>
 
-                        <div class="card-content" style="text-align: center;">
-                            <i class="fas fa-guitar" style="font-size: 4rem; color: #00695c; margin-bottom: 20px;"></i>
-                            <h3 class="card-title">Music Training & Gospel Production</h3>
-                            <p class="card-text">Equipping the next generation of worshippers through professional music education and gospel recording.</p>
-                            <ul style="text-align: left; margin: 20px 0; line-height: 2; color: #555;">
-                                <li>Instrumental classes (keyboard, guitar, drums, bass, vocals)</li>
-                                <li>One-on-one mentorship and coaching</li>
-                                <li>Professional studio recording sessions</li>
-                                <li>Worship team development and training</li>
-                                <li>Gospel music production and distribution</li>
-                            </ul>
-                            <a href="https://wa.me/254711509194?text=I'm%20interested%20in%20music%20training%20or%20recording" class="btn btn-primary" target="_blank" style="margin-top: 20px; display: inline-flex;">
-                                <i class="fab fa-whatsapp"></i> Enquire via WhatsApp
-                            </a>
-                        </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <img src="upload/images/music-training.jpg" alt="Music Training" class="card-img">
+                    <div class="card-overlay"><h3>Music Academy & Studio</h3></div>
+                    <div class="card-content">
+                        <div class="mission-icon"><i class="fas fa-guitar"></i></div>
+                        <p class="card-text">Equipping the next generation of worshippers through professional music education and gospel recording.</p>
+                        <ul style="text-align: left; margin: 20px 0; line-height: 2; color: #555;">
+                            <li>Instrumental classes (keyboard, guitar, drums, bass, vocals)</li>
+                            <li>One-on-one mentorship and coaching</li>
+                            <li>Professional studio recording sessions</li>
+                            <li>Worship team development and training</li>
+                            <li>Gospel music production and distribution</li>
+                        </ul>
+                        <a href="https://wa.me/254711509194?text=I'm%20interested%20in%20music%20training%20or%20recording" class="btn btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Enquire via WhatsApp
+                        </a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section">
+            <div class="hero-content" style="position: static; transform: none; padding: 60px 20px; background: linear-gradient(135deg, #00695c, #004d40); color: white;">
+                <h2 class="hero-title" style="color: white;">Get Involved Today</h2>
+                <p class="hero-subtitle">Join us in worship, serve in outreach, or grow through music training.</p>
+                <div class="hero-buttons">
+                    <a href="events.html" class="btn btn-primary"><i class="fas fa-calendar"></i> View Events</a>
+                    <a href="donate.html" class="btn btn-secondary"><i class="fas fa-hand-holding-heart"></i> Support Ministry</a>
                 </div>
             </div>
         </section>
@@ -157,16 +167,15 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Sound of Honour Global Services</h4>
-                <p>Spreading the Gospel through worship, prayer, and compassionate action since 2019.</p>
-                <p>"Through music, prayer, and compassionate action, we aim to uplift lives, strengthen faith, and bring hope to those in need."</p>
+                <p>Spreading the Gospel through worship, music education, evangelism, and compassionate action since 2019.</p>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Contact Information</h4>
                 <p><i class="fas fa-map-marker-alt"></i> Kamiti Rd, Kahawa West, Nairobi, Kenya</p>
                 <p><i class="fas fa-phone"></i> +254 711509194</p>
-                <p><i class="fas fa-envelope"></i> gbrlrotimi@gmail.com</p>
-                
+                <p><i class="fas fa-envelope"></i> info@soundofhonour.org</p>
+
                 <div class="social-links">
                     <a href="https://facebook.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://instagram.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -174,151 +183,45 @@
                     <a href="https://twitter.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-            
+
             <div class="footer-section">
                 <h4>Quick Links</h4>
-                <p><a href="ministry.html" style="color: white; text-decoration: none;">Ministry Areas</a></p>
-                <p><a href="gallery.html" style="color: white; text-decoration: none;">Photo Gallery</a></p>
-                <p><a href="events.html" style="color: white; text-decoration: none;">Upcoming Events</a></p>
-                <p><a href="donate.html" style="color: white; text-decoration: none;">Support Our Work</a></p>
+                <p><a href="index.html#ministry" style="color: white; text-decoration: none;">Ministry Areas</a></p>
+                <p><a href="events.html" style="color: white; text-decoration: none;">Events</a></p>
+                <p><a href="gallery.html" style="color: white; text-decoration: none;">Gallery</a></p>
+                <p><a href="donate.html" style="color: white; text-decoration: none;">Donate</a></p>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
-            <p>© 2025 Sound Of Honour Global Services. All rights reserved.</p>
+            <p>© 2025 Sound of Honour Global Services. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+    <!-- ===== FLOATING BUTTONS ===== -->
     <a href="https://wa.me/254711509194" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- ===== BACK TO TOP BUTTON ===== -->
-    <a href="#siteHeader" class="back-to-top" id="backToTop">
+    <a href="#home" class="back-to-top" id="backToTop">
         <i class="fas fa-chevron-up"></i>
     </a>
 
     <!-- ===== SCRIPTS ===== -->
     <script>
-        // Mobile menu, header scroll, back-to-top
-        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-        const mobileNav = document.querySelector('.mobile-nav');
-        const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
-        const siteHeader = document.getElementById('siteHeader');
-        const backToTop = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 100) siteHeader.classList.add('scrolled');
-            else siteHeader.classList.remove('scrolled');
-            
-            if (window.scrollY > 500) backToTop.classList.add('visible');
-            else backToTop.classList.remove('visible');
-        });
-        
-        mobileMenuToggle.addEventListener('click', function() {
-            mobileNav.classList.toggle('active');
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            document.querySelector('.mobile-nav').classList.toggle('active');
             const icon = this.querySelector('i');
             icon.classList.toggle('fa-bars');
             icon.classList.toggle('fa-times');
         });
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                if (window.innerWidth <= 768) {
-                    mobileNav.classList.remove('active');
-                    mobileMenuToggle.querySelector('i').classList.add('fa-bars');
-                    mobileMenuToggle.querySelector('i').classList.remove('fa-times');
-                }
-                navLinks.forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-        
-        document.addEventListener('click', function(e) {
-            if (!mobileNav.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
-                mobileNav.classList.remove('active');
-                const icon = mobileMenuToggle.querySelector('i');
-                icon.classList.add('fa-bars');
-                icon.classList.remove('fa-times');
-            }
-        });
 
-        // Slideshow functionality (independent for each section)
-        let slideIndices = {};
-
-        function plusSlides(n, btn) {
-            const slideshow = btn.parentElement;
-            let slides = slideshow.querySelectorAll('.slide');
-            if (!slideIndices[slideshow]) slideIndices[slideshow] = 1;
-            showSlide(slides, slideIndices[slideshow] += n);
-        }
-
-        function showSlide(slides, n) {
-            if (n > slides.length) n = 1;
-            if (n < 1) n = slides.length;
-            slides.forEach(s => s.style.display = "none");
-            slides[n-1].style.display = "block";
-        }
-
-        // Initialize all slideshows
-        document.querySelectorAll('.slideshow-container').forEach(container => {
-            const slides = container.querySelectorAll('.slide');
-            if (slides.length > 0) {
-                showSlide(slides, 1);
-                slideIndices[container] = 1;
-            }
+        // Header & back-to-top on scroll
+        window.addEventListener('scroll', function() {
+            document.querySelector('.site-header').classList.toggle('scrolled', window.scrollY > 100);
+            document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 500);
         });
     </script>
-
-    <!-- Slideshow styles (already added to style.css in previous recommendation) -->
-    <style>
-        .slideshow-container {
-            position: relative;
-            width: 100%;
-            height: 350px;
-            overflow: hidden;
-            border-radius: 15px 15px 0 0;
-        }
-        .slideshow-container .slide {
-            display: none;
-            width: 100%;
-            height: 100%;
-        }
-        .slideshow-container .slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .slideshow-container .prev,
-        .slideshow-container .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 50px;
-            height: 50px;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            font-size: 1.8rem;
-            border: none;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10;
-            transition: all 0.3s ease;
-        }
-        .slideshow-container .prev { left: 15px; }
-        .slideshow-container .next { right: 15px; }
-        .slideshow-container .prev:hover,
-        .slideshow-container .next:hover {
-            background: rgba(0, 105, 92, 0.9);
-            transform: translateY(-50%) scale(1.1);
-        }
-        @media (max-width: 768px) {
-            .slideshow-container { height: 280px; }
-        }
-    </style>
 </body>
 </html>
