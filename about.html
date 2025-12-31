@@ -6,7 +6,7 @@
     <meta name="description" content="Sound of Honour Global Services - Our history, vision, and diverse services including music school, music production, community welfare, evangelism, communion fellowship, prayers, concerts of praise, and festivals.">
     <title>About Us | Sound of Honour Global Services</title>
 
-    <!-- Favicon (same as index.html) -->
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="upload/images/logo.jpeg">
 
     <!-- Font Awesome -->
@@ -42,6 +42,7 @@
                     <a href="index.html#events" class="nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
                     <a href="index.html#gallery" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
                     <a href="index.html#donate" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+                    <a href="index.html#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
                 </nav>
 
                 <!-- Mobile Menu Toggle -->
@@ -58,6 +59,7 @@
                 <a href="index.html#events" class="mobile-nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
                 <a href="index.html#gallery" class="mobile-nav-link"><i class="fas fa-images"></i> Gallery</a>
                 <a href="index.html#donate" class="mobile-nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+                <a href="index.html#contact" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a>
             </nav>
         </header>
 
@@ -66,18 +68,17 @@
             <h1 class="hero-title">About Sound of Honour Global Services</h1>
             <p class="hero-subtitle">Empowering lives through worship, music education, community transformation, and the power of the Gospel since 2019</p>
             <div class="hero-buttons">
-                <a href="#services" class="btn btn-primary"><i class="fas fa-play-circle"></i> Our Services</a>
-                <a href="#vision" class="btn btn-secondary"><i class="fas fa-eye"></i> Our Vision</a>
+                <a href="#story" class="btn btn-primary"><i class="fas fa-book-open"></i> Our Story</a>
+                <a href="#services" class="btn btn-secondary"><i class="fas fa-play-circle"></i> Our Services</a>
             </div>
         </div>
     </section>
 
     <!-- ===== MAIN CONTENT ===== -->
     <main>
-
         <!-- Founding Story -->
-        <section id="about" class="section">
-            <h2 class="section-title">Our Journey & Vision</h2>
+        <section id="story" class="section">
+            <h2 class="section-title">Our Journey</h2>
 
             <div class="founding-story">
                 <div class="story-content">
@@ -87,12 +88,15 @@
                         <p>Through the power of music, prayer, and compassionate action, we are raising a generation that honours God and serves humanity with excellence and love.</p>
                     </div>
                     <div class="story-image">
-                        <img src="upload/images/ministry.jpg" alt="Ministry Team">
+                        <img src="upload/images/ministry.jpg" alt="Ministry Team Gathering">
                     </div>
                 </div>
             </div>
+        </section>
 
-            <h2 class="section-title" id="vision">Our Vision & Mission</h2>
+        <!-- Vision & Mission -->
+        <section id="vision" class="section">
+            <h2 class="section-title">Our Vision & Mission</h2>
             <div class="mission-grid">
                 <div class="mission-card">
                     <div class="mission-icon"><i class="fas fa-music"></i></div>
@@ -117,109 +121,134 @@
             </div>
         </section>
 
-        <!-- Our Services -->
-        <section id="services" class="section">
+        <!-- Our Services with Slideshow Cards -->
+        <section id="services" class="section tabs-section">
             <h2 class="section-title">Our Core Services</h2>
 
             <div class="cards-grid">
                 <!-- Music School -->
-                <div class="card">
-                    <img src="upload/images/music-school.jpg" alt="Music School" class="card-img">
-                    <div class="card-overlay">
-                        <h3 class="gallery-title">Sound of Honour Music Academy</h3>
+                <div class="card slideshow-card">
+                    <div class="slideshow-container">
+                        <div class="slide fade"><img src="upload/images/music-school-1.jpg" alt="Piano Class" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/music-school-2.jpg" alt="Guitar Training" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/music-school-3.jpg" alt="Vocal Coaching" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/music-school-4.jpg" alt="Drums Session" class="card-img"></div>
+                        <a class="prev" onclick="changeSlide(-1, this)">❮</a>
+                        <a class="next" onclick="changeSlide(1, this)">❯</a>
+                        <div class="dots"></div>
                     </div>
                     <div class="card-content">
-                        <span class="card-category">Education</span>
-                        <h3 class="card-title">Music School</h3>
-                        <p class="card-text">Professional training in voice, instruments (piano, guitar, drums, etc.), music theory, choir direction, and worship leading.</p>
+                        <span class="card-category">Music Education</span>
+                        <h3 class="card-title">Sound of Honour Music Academy</h3>
+                        <p class="card-text">Professional training in piano, guitar, drums, bass, vocals, music theory, choir direction, and worship leading for all ages and levels.</p>
                         <div class="card-footer">
-                            <span class="card-date">Classes Daily</span>
-                            <button class="card-btn" onclick="alert('Contact us to enroll in our music academy!')">Enroll Now</button>
+                            <span class="card-date">Daily Classes</span>
+                            <button class="card-btn" onclick="contactWhatsApp('music academy enrollment')">Enroll Now</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Music Production -->
-                <div class="card">
-                    <img src="upload/images/music-production.jpg" alt="Music Production" class="card-img">
-                    <div class="card-overlay">
-                        <h3 class="gallery-title">Professional Recording Studio</h3>
+                <div class="card slideshow-card">
+                    <div class="slideshow-container">
+                        <div class="slide fade"><img src="upload/images/music-production-1.jpg" alt="Recording Studio" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/music-production-2.jpg" alt="Mixing Session" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/music-production-3.jpg" alt="Mastering" class="card-img"></div>
+                        <a class="prev" onclick="changeSlide(-1, this)">❮</a>
+                        <a class="next" onclick="changeSlide(1, this)">❯</a>
+                        <div class="dots"></div>
                     </div>
                     <div class="card-content">
                         <span class="card-category">Production</span>
-                        <h3 class="card-title">Music Production</h3>
-                        <p class="card-text">State-of-the-art recording, mixing, mastering, songwriting, and production services for artists and worship teams.</p>
+                        <h3 class="card-title">Professional Gospel Recording Studio</h3>
+                        <p class="card-text">Full-service recording, mixing, mastering, and production for worship teams and gospel artists.</p>
                         <div class="card-footer">
-                            <span class="card-date">Studio Sessions Available</span>
-                            <button class="card-btn" onclick="contactWhatsApp('music production')">Book Studio</button>
+                            <span class="card-date">Sessions Available</span>
+                            <button class="card-btn" onclick="contactWhatsApp('studio booking')">Book Studio</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Community Welfare -->
-                <div class="card">
-                    <img src="upload/images/community-welfare.jpg" alt="Community Support" class="card-img">
-                    <div class="card-overlay">
-                        <h3 class="gallery-title">Community Welfare Program</h3>
+                <div class="card slideshow-card">
+                    <div class="slideshow-container">
+                        <div class="slide fade"><img src="upload/images/community-welfare-1.jpg" alt="Feeding Program" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/community-welfare-2.jpg" alt="Family Support" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/community-welfare-3.jpg" alt="Medical Aid" class="card-img"></div>
+                        <a class="prev" onclick="changeSlide(-1, this)">❮</a>
+                        <a class="next" onclick="changeSlide(1, this)">❯</a>
+                        <div class="dots"></div>
                     </div>
                     <div class="card-content">
-                        <span class="card-category">Outreach</span>
-                        <h3 class="card-title">Community Welfare</h3>
-                        <p class="card-text">Feeding programs, school fees support, medical assistance, and empowerment initiatives for orphans and underprivileged families.</p>
+                        <span class="card-category">Community Support</span>
+                        <h3 class="card-title">Community Welfare Programs</h3>
+                        <p class="card-text">Feeding programs, school fees support, medical assistance, and empowerment for orphans and vulnerable families.</p>
                         <div class="card-footer">
                             <span class="card-date">Ongoing</span>
-                            <button class="card-btn" onclick="donateViaPayPal('community')">Support Us</button>
+                            <button class="card-btn" onclick="contactWhatsApp('community support')">Support Us</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Evangelism -->
-                <div class="card">
-                    <img src="upload/images/evangelism.jpg" alt="Evangelism" class="card-img">
-                    <div class="card-overlay">
-                        <h3 class="gallery-title">Street & Crusade Evangelism</h3>
+                <div class="card slideshow-card">
+                    <div class="slideshow-container">
+                        <div class="slide fade"><img src="upload/images/evangelism-1.jpg" alt="Street Evangelism" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/evangelism-2.jpg" alt="Crusade" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/evangelism-3.jpg" alt="Soul Winning" class="card-img"></div>
+                        <a class="prev" onclick="changeSlide(-1, this)">❮</a>
+                        <a class="next" onclick="changeSlide(1, this)">❯</a>
+                        <div class="dots"></div>
                     </div>
                     <div class="card-content">
                         <span class="card-category">Outreach</span>
-                        <h3 class="card-title">Evangelism</h3>
-                        <p class="card-text">Door-to-door ministry, open-air crusades, and street evangelism to share the Gospel and lead souls to Christ.</p>
+                        <h3 class="card-title">Evangelism & Street Ministry</h3>
+                        <p class="card-text">Door-to-door ministry, open-air crusades, and street evangelism to share the Gospel.</p>
                         <div class="card-footer">
                             <span class="card-date">Every Saturday</span>
-                            <button class="card-btn" onclick="alert('Join our evangelism team!')">Join Team</button>
+                            <button class="card-btn" onclick="contactWhatsApp('join evangelism')">Join Team</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Communion Fellowship & Prayers -->
-                <div class="card">
-                    <img src="upload/images/prayer-fellowship.jpg" alt="Prayer & Fellowship" class="card-img">
-                    <div class="card-overlay">
-                        <h3 class="gallery-title">Communion, Fellowship & Prayer</h3>
+                <!-- Prayer & Fellowship -->
+                <div class="card slideshow-card">
+                    <div class="slideshow-container">
+                        <div class="slide fade"><img src="upload/images/prayer-fellowship-1.jpg" alt="Prayer Meeting" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/prayer-fellowship-2.jpg" alt="Communion" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/prayer-fellowship-3.jpg" alt="All-Night Prayer" class="card-img"></div>
+                        <a class="prev" onclick="changeSlide(-1, this)">❮</a>
+                        <a class="next" onclick="changeSlide(1, this)">❯</a>
+                        <div class="dots"></div>
                     </div>
                     <div class="card-content">
                         <span class="card-category">Spiritual Growth</span>
-                        <h3 class="card-title">Communion & Prayer Fellowship</h3>
-                        <p class="card-text">Weekly prayer meetings, communion services, all-night vigils, and small group fellowships for spiritual deepening.</p>
+                        <h3 class="card-title">Communion, Fellowship & Prayer</h3>
+                        <p class="card-text">Weekly prayer meetings, communion services, all-night vigils, and fellowship groups.</p>
                         <div class="card-footer">
                             <span class="card-date">Wednesdays & Fridays</span>
-                            <button class="card-btn" onclick="document.getElementById('prayerForm').scrollIntoView({behavior: 'smooth'})">Join Prayer</button>
+                            <button class="card-btn" onclick="contactWhatsApp('prayer fellowship')">Join Prayer</button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Concerts of Praise & Festivals -->
-                <div class="card">
-                    <img src="upload/images/concert.jpg" alt="Concerts & Festivals" class="card-img">
-                    <div class="card-overlay">
-                        <h3 class="gallery-title">Concerts of Praise & Festivals</h3>
+                <!-- Concerts & Festivals -->
+                <div class="card slideshow-card">
+                    <div class="slideshow-container">
+                        <div class="slide fade"><img src="upload/images/concert-1.jpg" alt="Praise Concert" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/concert-2.jpg" alt="Worship Festival" class="card-img"></div>
+                        <div class="slide fade"><img src="upload/images/concert-3.jpg" alt="Revival Night" class="card-img"></div>
+                        <a class="prev" onclick="changeSlide(-1, this)">❮</a>
+                        <a class="next" onclick="changeSlide(1, this)">❯</a>
+                        <div class="dots"></div>
                     </div>
                     <div class="card-content">
                         <span class="card-category">Events</span>
-                        <h3 class="card-title">Concerts of Praise & Festivals</h3>
-                        <p class="card-text">Annual and monthly concerts, worship festivals, revival nights, and music showcases to glorify God.</p>
+                        <h3 class="card-title">Concerts of Praise & Worship Festivals</h3>
+                        <p class="card-text">Monthly and annual worship concerts, revival nights, and music festivals to glorify God.</p>
                         <div class="card-footer">
                             <span class="card-date">Monthly & Annual</span>
-                            <button class="card-btn" onclick="alert('Check our events calendar for upcoming concerts!')">View Events</button>
+                            <button class="card-btn">View Events</button>
                         </div>
                     </div>
                 </div>
@@ -233,7 +262,7 @@
                 <p class="hero-subtitle">Whether through music, prayer, evangelism, or community support, there’s a place for you in the Sound of Honour family.</p>
                 <div class="hero-buttons">
                     <a href="index.html#donate" class="btn btn-primary"><i class="fas fa-hand-holding-heart"></i> Support Our Work</a>
-                    <a href="index.html#contactSection" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Us</a>
+                    <a href="index.html#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Us</a>
                 </div>
             </div>
         </section>
@@ -257,15 +286,15 @@
                     <a href="https://facebook.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://instagram.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://youtube.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="https://twitter.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
 
             <div class="footer-section">
                 <h4>Quick Links</h4>
+                <p><a href="index.html" style="color: white; text-decoration: none;">Home</a></p>
                 <p><a href="index.html#ministry" style="color: white; text-decoration: none;">Our Services</a></p>
-                <p><a href="index.html#events" style="color: white; text-decoration: none;">Upcoming Events</a></p>
-                <p><a href="index.html#donate" style="color: white; text-decoration: none;">Support Our Work</a></p>
+                <p><a href="index.html#events" style="color: white; text-decoration: none;">Events</a></p>
+                <p><a href="index.html#donate" style="color: white; text-decoration: none;">Donate</a></p>
             </div>
         </div>
 
@@ -274,19 +303,18 @@
         </div>
     </footer>
 
-    <!-- ===== WHATSAPP FLOATING BUTTON ===== -->
+    <!-- Floating Buttons -->
     <a href="https://wa.me/254711509194" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- ===== BACK TO TOP BUTTON ===== -->
     <a href="#home" class="back-to-top" id="backToTop">
         <i class="fas fa-chevron-up"></i>
     </a>
 
-    <!-- ===== SCRIPTS ===== -->
+    <!-- Scripts -->
     <script>
-        // Mobile Menu Toggle
+        // Mobile menu toggle
         document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
             document.querySelector('.mobile-nav').classList.toggle('active');
             const icon = this.querySelector('i');
@@ -294,13 +322,59 @@
             icon.classList.toggle('fa-times');
         });
 
-        // Header scroll effect
+        // Header & back-to-top on scroll
         window.addEventListener('scroll', function() {
             document.querySelector('.site-header').classList.toggle('scrolled', window.scrollY > 100);
-
-            // Back to top button
             document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 500);
         });
+
+        // Slideshow functionality
+        let slideIndices = {};
+
+        function changeSlide(n, btn) {
+            const container = btn.closest('.slideshow-container');
+            const slides = container.querySelectorAll('.slide');
+            const dots = container.querySelector('.dots');
+            if (!slideIndices[container]) slideIndices[container] = 0;
+            slideIndices[container] += n;
+            if (slideIndices[container] >= slides.length) slideIndices[container] = 0;
+            if (slideIndices[container] < 0) slideIndices[container] = slides.length - 1;
+            showSlide(container, slideIndices[container], slides, dots);
+        }
+
+        function showSlide(container, index, slides, dotsContainer) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? '1' : '0';
+            });
+            if (dotsContainer) {
+                dotsContainer.innerHTML = '';
+                slides.forEach((_, i) => {
+                    const dot = document.createElement('span');
+                    dot.className = 'dot';
+                    dot.onclick = () => {
+                        slideIndices[container] = i;
+                        showSlide(container, i, slides, dotsContainer);
+                    };
+                    if (i === index) dot.classList.add('active');
+                    dotsContainer.appendChild(dot);
+                });
+            }
+        }
+
+        // Initialize slideshows with auto-advance
+        document.querySelectorAll('.slideshow-container').forEach(container => {
+            const slides = container.querySelectorAll('.slide');
+            const dots = container.querySelector('.dots');
+            slideIndices[container] = 0;
+            showSlide(container, 0, slides, dots);
+            setInterval(() => changeSlide(1, container.querySelector('.next')), 5000);
+        });
+
+        // WhatsApp helper
+        function contactWhatsApp(purpose) {
+            const text = `Hello, I'm interested in ${purpose}. Please provide more details.`;
+            window.open(`https://wa.me/254711509194?text=${encodeURIComponent(text)}`, '_blank');
+        }
     </script>
 </body>
 </html>

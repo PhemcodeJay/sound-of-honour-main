@@ -6,7 +6,7 @@
     <meta name="description" content="Services | Sound of Honour Global Services - Church services, outreach programs, music school, and professional gospel production.">
     <title>Services | Sound of Honour Global Services</title>
 
-    <!-- Favicon (same as index.html) -->
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="upload/images/logo.jpeg">
 
     <!-- Font Awesome -->
@@ -38,11 +38,11 @@
                 <nav class="desktop-nav">
                     <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
                     <a href="about.html" class="nav-link"><i class="fas fa-church"></i> About</a>
-                    <a href="ministry.html" class="nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
-                    <a href="services.html" class="nav-link active"><i class="fas fa-guitar"></i> Services</a>
+                    <a href="index.html#ministry" class="nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
                     <a href="events.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
                     <a href="gallery.html" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
                     <a href="donate.html" class="nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+                    <a href="index.html#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
                 </nav>
 
                 <!-- Mobile Menu Toggle -->
@@ -55,11 +55,11 @@
             <nav class="mobile-nav">
                 <a href="index.html" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a>
                 <a href="about.html" class="mobile-nav-link"><i class="fas fa-church"></i> About</a>
-                <a href="ministry.html" class="mobile-nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
-                <a href="services.html" class="mobile-nav-link active"><i class="fas fa-guitar"></i> Services</a>
+                <a href="index.html#ministry" class="mobile-nav-link"><i class="fas fa-hands-praying"></i> Ministry</a>
                 <a href="events.html" class="mobile-nav-link"><i class="fas fa-calendar-alt"></i> Events</a>
                 <a href="gallery.html" class="mobile-nav-link"><i class="fas fa-images"></i> Gallery</a>
                 <a href="donate.html" class="mobile-nav-link"><i class="fas fa-hand-holding-heart"></i> Donate</a>
+                <a href="index.html#contact" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a>
             </nav>
         </header>
 
@@ -80,20 +80,27 @@
             <h2 class="section-title">Explore Our Services</h2>
 
             <div class="tabs-header">
-                <button class="tab-btn active" data-tab="church">Church Services</button>
-                <button class="tab-btn" data-tab="outreach">Outreach & Community</button>
-                <button class="tab-btn" data-tab="music">Music School & Production</button>
+                <button class="tab-btn active" data-tab="church"><i class="fas fa-church"></i> Church Services</button>
+                <button class="tab-btn" data-tab="outreach"><i class="fas fa-hands-helping"></i> Outreach & Community</button>
+                <button class="tab-btn" data-tab="music"><i class="fas fa-guitar"></i> Music School & Production</button>
             </div>
 
             <!-- Church Services Tab -->
             <div class="tab-content active" id="church">
                 <div class="cards-grid">
-                    <div class="card">
-                        <img src="upload/images/church-services.jpg" alt="Sunday Worship" class="card-img">
-                        <div class="card-overlay"><h3>Sunday Worship & Special Nights</h3></div>
+                    <div class="card slideshow-card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="upload/images/worship-service-1.jpg" alt="Sunday Worship 1" class="card-img"></div>
+                            <div class="slide fade"><img src="upload/images/worship-service-2.jpg" alt="Sunday Worship 2" class="card-img"></div>
+                            <div class="slide fade"><img src="upload/images/worship-service-3.jpg" alt="Sunday Worship 3" class="card-img"></div>
+                            <div class="slide fade"><img src="upload/images/prayer-fellowship-1.jpg" alt="Prayer Meeting" class="card-img"></div>
+                            <a class="prev" onclick="changeSlide(-1, this)">❮</a>
+                            <a class="next" onclick="changeSlide(1, this)">❯</a>
+                            <div class="dots"></div>
+                        </div>
                         <div class="card-content">
                             <span class="card-category">Church Services</span>
-                            <h3 class="card-title">Sunday Worship Experience & Special Nights</h3>
+                            <h3 class="card-title">Sunday Worship & Special Nights</h3>
                             <p class="card-text">Powerful Sunday services filled with anointed praise, worship, teaching, and fellowship. Monthly special worship nights for deeper encounter.</p>
                             <div class="card-footer">
                                 <span class="card-date">Every Sunday • 12:00 PM | Special Nights: Last Friday Monthly</span>
@@ -107,9 +114,17 @@
             <!-- Outreach & Community Tab -->
             <div class="tab-content" id="outreach">
                 <div class="cards-grid">
-                    <div class="card">
-                        <img src="upload/images/outreach.jpg" alt="Outreach Programs" class="card-img">
-                        <div class="card-overlay"><h3>Outreach & Community</h3></div>
+                    <div class="card slideshow-card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="upload/images/evangelism-1.jpg" alt="Street Evangelism" class="card-img"></div>
+                            <div class="slide fade"><img src="upload/images/evangelism-2.jpg" alt="Crusade" class="card-img"></div>
+                            <div class="slide fade"><img src="upload/images/community-welfare-1.jpg" alt="Feeding Program" class="card-img"></div>
+                            <div class="slide fade"><img src="upload/images/community-welfare-2.jpg" alt="Community Support" class="card-img"></div>
+                            <div class="slide fade"><img src="upload/images/community-welfare-3.jpg" alt="Medical Aid" class="card-img"></div>
+                            <a class="prev" onclick="changeSlide(-1, this)">❮</a>
+                            <a class="next" onclick="changeSlide(1, this)">❯</a>
+                            <div class="dots"></div>
+                        </div>
                         <div class="card-content">
                             <span class="card-category">Community Impact</span>
                             <h3 class="card-title">Outreach, Support & Community Programs</h3>
@@ -126,9 +141,17 @@
             <!-- Music School & Production Tab -->
             <div class="tab-content" id="music">
                 <div class="cards-grid">
-                    <div class="card">
-                        <img src="upload/images/music-services.jpg" alt="Music School & Studio" class="card-img">
-                        <div class="card-overlay"><h3>Music Academy & Studio</h3></div>
+                    <div class="card slideshow-card">
+                        <div class="slideshow-container">
+                            <div class="slide fade"><img src="upload/images/music-school-1.jpg" alt="Music Academy" class="card-img"></div>
+                            <div class="slide fade"><img src="upload/images/music-school-2.jpg" alt="Instrument Training" class="card-img"></div>
+                            <div class="slide fade"><img src="upload/images/music-school-3.jpg" alt="Vocal Coaching" class="card-img"></div>
+                            <div class="slide fade"><img src="upload/images/music-production-1.jpg" alt="Studio Recording" class="card-img"></div>
+                            <div class="slide fade"><img src="upload/images/music-production-2.jpg" alt="Mixing Session" class="card-img"></div>
+                            <a class="prev" onclick="changeSlide(-1, this)">❮</a>
+                            <a class="next" onclick="changeSlide(1, this)">❯</a>
+                            <div class="dots"></div>
+                        </div>
                         <div class="card-content">
                             <span class="card-category">Music Services</span>
                             <h3 class="card-title">Sound of Honour Music School & Gospel Production</h3>
@@ -175,15 +198,14 @@
                     <a href="https://facebook.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://instagram.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://youtube.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="https://twitter.com/soundofhonour" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
 
             <div class="footer-section">
                 <h4>Quick Links</h4>
-                <p><a href="ministry.html" style="color: white; text-decoration: none;">Ministry Areas</a></p>
+                <p><a href="index.html" style="color: white; text-decoration: none;">Home</a></p>
+                <p><a href="about.html" style="color: white; text-decoration: none;">About</a></p>
                 <p><a href="events.html" style="color: white; text-decoration: none;">Events</a></p>
-                <p><a href="gallery.html" style="color: white; text-decoration: none;">Gallery</a></p>
                 <p><a href="donate.html" style="color: white; text-decoration: none;">Donate</a></p>
             </div>
         </div>
@@ -193,7 +215,7 @@
         </div>
     </footer>
 
-    <!-- ===== FLOATING BUTTONS ===== -->
+    <!-- Floating Buttons -->
     <a href="https://wa.me/254711509194" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
@@ -202,7 +224,7 @@
         <i class="fas fa-chevron-up"></i>
     </a>
 
-    <!-- ===== SCRIPTS ===== -->
+    <!-- Scripts -->
     <script>
         // Mobile menu toggle
         document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
@@ -228,6 +250,78 @@
 
                 this.classList.add('active');
                 document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Enhanced Slideshow with pause on hover, clickable dots, and captions
+        let slideIndices = {};
+        let intervals = {};
+
+        function changeSlide(n, btn) {
+            const container = btn.closest('.slideshow-container');
+            const slides = container.querySelectorAll('.slide');
+            const dots = container.querySelector('.dots');
+            const caption = container.querySelector('.caption');
+
+            if (!slideIndices[container]) slideIndices[container] = 0;
+            slideIndices[container] += n;
+
+            if (slideIndices[container] >= slides.length) slideIndices[container] = 0;
+            if (slideIndices[container] < 0) slideIndices[container] = slides.length - 1;
+
+            showSlide(container, slideIndices[container], slides, dots, caption);
+        }
+
+        function currentSlide(n, container) {
+            const slides = container.querySelectorAll('.slide');
+            const dots = container.querySelector('.dots');
+            const caption = container.querySelector('.caption');
+            slideIndices[container] = n - 1;
+            showSlide(container, slideIndices[container], slides, dots, caption);
+        }
+
+        function showSlide(container, index, slides, dotsContainer, caption) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? '1' : '0';
+            });
+
+            if (caption) {
+                caption.textContent = slides[index].getAttribute('data-caption') || '';
+            }
+
+            if (dotsContainer) {
+                dotsContainer.innerHTML = '';
+                slides.forEach((_, i) => {
+                    const dot = document.createElement('span');
+                    dot.className = 'dot';
+                    dot.onclick = () => currentSlide(i + 1, container);
+                    if (i === index) dot.classList.add('active');
+                    dotsContainer.appendChild(dot);
+                });
+            }
+        }
+
+        // Initialize all slideshows
+        document.querySelectorAll('.slideshow-container').forEach(container => {
+            const slides = container.querySelectorAll('.slide');
+            const dots = container.querySelector('.dots');
+
+            // Add caption element
+            if (!container.querySelector('.caption')) {
+                const caption = document.createElement('div');
+                caption.className = 'caption';
+                container.appendChild(caption);
+            }
+
+            slideIndices[container] = 0;
+            showSlide(container, 0, slides, dots, container.querySelector('.caption'));
+
+            // Auto-advance (4 seconds) with pause on hover
+            intervals[container] = setInterval(() => changeSlide(1, container.querySelector('.next')), 4000);
+
+            container.addEventListener('mouseenter', () => clearInterval(intervals[container]));
+            container.addEventListener('mouseleave', () => {
+                intervals[container] = setInterval(() => changeSlide(1, container.querySelector('.next')), 4000);
             });
         });
     </script>

@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== VIDEO HERO SECTION (used on most pages) ===== */
+/* ===== VIDEO HERO SECTION ===== */
 .video-hero {
     position: relative;
     width: 100%;
@@ -47,7 +47,7 @@ body {
     z-index: 2;
 }
 
-/* ===== HEADER & NAVIGATION (consistent across all pages) ===== */
+/* ===== HEADER & NAVIGATION ===== */
 .site-header {
     position: fixed;
     top: 0;
@@ -211,7 +211,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ===== HERO CONTENT (used on all pages with .video-hero) ===== */
+/* ===== HERO CONTENT ===== */
 .hero-content {
     position: absolute;
     top: 50%;
@@ -353,7 +353,7 @@ main {
     border-radius: 2px;
 }
 
-/* ===== TABS SECTION (used in services.html) ===== */
+/* ===== TABS SECTION ===== */
 .tabs-section {
     background: white;
     padding: 80px 20px;
@@ -413,7 +413,7 @@ main {
     to { opacity: 1; }
 }
 
-/* ===== CARDS & GRIDS (used across all pages) ===== */
+/* ===== CARDS & GRIDS ===== */
 .cards-grid,
 .mission-grid,
 .donate-grid,
@@ -438,36 +438,95 @@ main {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.card-img {
+/* Slideshow inside cards */
+.slideshow-card .slideshow-container {
+    position: relative;
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.4s ease;
+    height: 280px;
+    overflow: hidden;
 }
 
-.card:hover .card-img {
-    transform: scale(1.1);
-}
-
-.card-overlay {
+.slideshow-container .slide {
     position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0, 105, 92, 0.9), transparent);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    transition: opacity 0.4s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    padding: 20px;
+    transition: opacity 0.8s ease;
 }
 
-.card:hover .card-overlay {
+.slideshow-container .slide:first-child {
     opacity: 1;
 }
 
+.slideshow-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideshow-container .prev,
+.slideshow-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.slideshow-container .prev {
+    left: 15px;
+}
+
+.slideshow-container .next {
+    right: 15px;
+}
+
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+    background: rgba(0, 105, 92, 0.9);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.slideshow-container .dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.slideshow-container .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slideshow-container .dot.active {
+    background: white;
+    transform: scale(1.2);
+}
+
+/* Gallery slideshow */
+.gallery-item .slideshow-container {
+    height: 300px;
+}
+
+/* Card content */
 .card-content {
     padding: 25px;
     text-align: center;
@@ -512,7 +571,7 @@ main {
     font-size: 0.9rem;
 }
 
-/* Founding Story (about.html) */
+/* Founding Story */
 .founding-story {
     background: white;
     padding: 50px;
@@ -552,7 +611,7 @@ main {
     transform: scale(1.02);
 }
 
-/* Mission Cards (about.html, ministry.html) */
+/* Mission Cards */
 .mission-card {
     background: white;
     padding: 40px 30px;
@@ -561,18 +620,6 @@ main {
     text-align: center;
     transition: all 0.4s ease;
     border-top: 5px solid #00695c;
-    position: relative;
-    overflow: hidden;
-}
-
-.mission-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: linear-gradient(to right, #ffd700, #00695c);
 }
 
 .mission-card:hover {
@@ -604,17 +651,16 @@ main {
     font-size: 1.05rem;
 }
 
-/* Calendar (events.html) */
+/* Calendar */
 #calendar {
     background: white;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     border: 2px solid #00695c;
-    margin-bottom: 60px;
 }
 
-/* Forms (donate.html, contact) */
+/* Forms */
 .form-container {
     max-width: 700px;
     margin: 0 auto;
@@ -625,7 +671,6 @@ main {
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-    margin: 60px auto;
 }
 
 .form-card h3 {
@@ -640,7 +685,8 @@ main {
 }
 
 .form-group input,
-.form-group textarea {
+.form-group textarea,
+.form-group select {
     width: 100%;
     padding: 15px;
     border: 2px solid #ddd;
@@ -650,7 +696,8 @@ main {
 }
 
 .form-group input:focus,
-.form-group textarea:focus {
+.form-group textarea:focus,
+.form-group select:focus {
     border-color: #00695c;
     outline: none;
     box-shadow: 0 0 0 3px rgba(0, 105, 92, 0.1);
@@ -684,13 +731,14 @@ main {
     box-shadow: 0 8px 20px rgba(0, 105, 92, 0.3);
 }
 
-/* Gallery Specific */
+/* Gallery */
 .gallery-section {
     padding: 80px 20px;
     background: #f8f9fa;
 }
 
 .gallery-grid {
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 25px;
 }
@@ -703,15 +751,8 @@ main {
     cursor: pointer;
 }
 
-.gallery-item img {
-    width: 100%;
+.gallery-item .slideshow-container {
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.1);
 }
 
 .gallery-overlay {
@@ -735,71 +776,26 @@ main {
     font-weight: 600;
 }
 
-/* Video Items in Gallery */
-.video-item .video-container {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 15px;
-}
-
-.video-item iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-/* Footer (consistent) */
+/* Footer */
 .site-footer {
     background: linear-gradient(135deg, #004d40, #00695c);
     color: white;
     padding: 80px 20px 30px;
-    position: relative;
-    overflow: hidden;
-}
-
-.site-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://images.unsplash.com/photo-1518834103328-93d45986dce1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover;
-    opacity: 0.05;
 }
 
 .footer-content {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
     margin-bottom: 50px;
-    position: relative;
-    z-index: 1;
 }
 
 .footer-section h4 {
     color: #ffd700;
     margin-bottom: 25px;
     font-size: 1.5rem;
-    position: relative;
-    padding-bottom: 10px;
-}
-
-.footer-section h4::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background: #ffd700;
 }
 
 .social-links {
@@ -809,15 +805,14 @@ main {
 }
 
 .social-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     width: 50px;
     height: 50px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     color: white;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.3rem;
     transition: all 0.3s ease;
 }
@@ -833,7 +828,6 @@ main {
     padding-top: 40px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: #ffd700;
-    font-size: 1.1rem;
 }
 
 /* Floating Buttons */
@@ -850,7 +844,6 @@ main {
     justify-content: center;
     color: white;
     font-size: 2rem;
-    text-decoration: none;
     box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
     z-index: 1000;
     transition: all 0.4s ease;
@@ -864,7 +857,7 @@ main {
 }
 
 .whatsapp-float:hover {
-    transform: scale(1.1) rotate(10deg);
+    transform: scale(1.1);
     box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
 }
 
@@ -881,7 +874,6 @@ main {
     justify-content: center;
     color: white;
     font-size: 1.5rem;
-    text-decoration: none;
     box-shadow: 0 5px 20px rgba(0, 105, 92, 0.3);
     z-index: 999;
     opacity: 0;
@@ -934,6 +926,13 @@ main {
     .tab-btn { width: 100%; max-width: 300px; justify-content: center; }
 
     .form-card { padding: 30px 20px; }
+
+    .slideshow-container .prev,
+    .slideshow-container .next {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
 
     .whatsapp-float {
         width: 60px;
